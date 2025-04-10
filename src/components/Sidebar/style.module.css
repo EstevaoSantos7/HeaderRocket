@@ -1,45 +1,95 @@
 .sidenav {
     position: absolute;
-    height: 95vh;
+    height: 100%;
     width: 240px;
-    padding: 8px 10px;
-    transition: all 1s;
+    padding: 10px 10px;
+    transition: all 0.5s;
     background-color: #1D2836;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    overflow: scroll;
 
-    ul {
+    .elementos {
         background-color: #2B3B4F;
         border-radius: 12px;
         padding: 10px;
         display: flex;
-        gap: 12px;
+        gap: 10px;
         flex-direction: column;
-    }
 
-    li {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        .bloco {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            transition: 0.5s;
+            padding: 2px 6px;
+
+            a {
+
+                padding: 5px 12px;
+                text-decoration: none;
+                color: white;
+                transition: all 0.5s;
+            }
 
 
-        a {
-
-            padding: 5px 12px;
-            text-decoration: none;
-            color: white;
-            transition: all 0.5s;
         }
 
-        li :hover {
-            background-color: #98a3b1;
-            border-radius: 8px;
-        }
+
     }
+}
+.sidenav::-webkit-scrollbar{
+    background: transparent;
+   
+}
+.bloco:hover {
+    background-color: #294e7b;
+    border-radius: 8px;
+    transition: 1s;
+    transform: scale(1.05);
 }
 
 .sidebarOverlay {
+    transition: all 0.5s;
     position: absolute;
-    background-color: antiquewhite;
+    background-color: #1D2836;
+    width: 90px;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+
+    .elementos {
+
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: white 1px solid;
+
+        .icones {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+
+        }
+    }
+
+    .elementosFinal {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .icones {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+
+        }
+    }
 }

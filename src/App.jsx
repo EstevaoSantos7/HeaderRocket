@@ -1,13 +1,14 @@
 import "./App.css";
 import Header from "./components/Header";
-import Sidebar from './components/Sidebar'
-
+import Sidebar from "./components/Sidebar";
+import Sobre from "./components/Sobre";
+import RoutesApp from "./routes";
 function App() {
   return (
-    <>
-      <Header/>
-      <Sidebar/>
-    </>
+    
+ 
+    <Sobre/>
+    // <RoutesApp/>
   );
 }
 

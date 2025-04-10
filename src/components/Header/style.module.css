@@ -1,5 +1,89 @@
-.containerHeader{
-    background-color: #3b4f68;
-    
+.containerHeader {
+    background-color: #1D2836;
+    box-shadow: 0 2px 10px black;
     height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .start {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logoBet {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 25px;
+
+        .logoRocket {
+            width: 150px;
+            object-fit: cover;
+        }
+
+        .logoFoguete {
+            width: 50px;
+            object-fit: cover;
+        }
+    }
+
+    .cadastros {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding: 5px 8px;
+
+        .entrar {
+            background-color: #24303E;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 8px;
+            transition: 0.5s;
+
+            h1 {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        .cadastrar {
+            color: #212C3A;
+            font-size: 12px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            transition: 0.5s;
+
+            h1 {
+                font-size: 18px;
+                font-weight: 500;
+            }
+            
+        }
+       
+        
+    }
+}
+.cadastrar:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.entrar:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    
 }
