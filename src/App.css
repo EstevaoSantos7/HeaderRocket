@@ -3,13 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  
+
 }
-#root{
-  background-color: rgb(173, 171, 171);
+
+#root {
+
   height: 100vh;
 }
 
-body{
+body {
   overflow: hidden;
 }

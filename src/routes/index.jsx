@@ -6,9 +6,9 @@ export default function RoutesApp() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Home/>} />
                 <Route path="/sobre" element={<Sobre />} />
-                <Route path="/home" element={<Home />} />
+
             </Routes>
         </BrowserRouter >
 

@@ -46,8 +46,8 @@ export default function SobreNos() {
                           performance para garantir a melhor experiência ao usuário."
                         imagemTwo={Kaua}
                     />
-                
-                
+
+
                     <Integrante nomeFirst="Maria L. Souza -" funcaoFirst="Designer" descriptionFirst="Maria Laura Souza é designer na Rocket Bet, onde 
                     transforma ideias em experiências visuais intuitivas, acessíveis e impactantes para milhares de usuários no universo das apostas 
                     online. Com um olhar aguçado para usabilidade e estética, ela atua na criação de interfaces que equilibram funcionalidade e 
@@ -57,8 +57,8 @@ export default function SobreNos() {
                          dinâmico e colaborativo, sempre focado em performance, segurança e inovação."
                         imagemTwo={Gael}
                     />
-               
-               </div>
+
+                </div>
             </div>
 
         </>
