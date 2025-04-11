@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "../components/Header";
 import Sidebar from '../components/Sidebar'
+import Inicio from "../components/Home";
 
 function Home() {
     const [open, setOpen] = useState(false);
@@ -8,11 +9,11 @@ function Home() {
 
     return (
         <>
-            <Header open={open} setOpen={setOpen} />
+            {/* <Header open={open} setOpen={setOpen} /> */}
             <div>
-                <Sidebar open={open} />
+                {/* <Sidebar open={open} /> */}
                 <div>
-                    {/* resto do conteudo da tela */}
+                   <Inicio/>
                 </div>
             </div>
         </>

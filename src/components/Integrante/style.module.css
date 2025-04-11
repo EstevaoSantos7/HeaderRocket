@@ -1,0 +1,118 @@
+.containerIntergrante {
+
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .integranteLeft {
+        background-color: #536376;
+        border-radius: 10px;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        .image {
+            object-fit: cover;
+            width: 500px;
+        }
+
+        .conteudo {
+            padding: 0 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .titulo {
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 35px;
+
+                .nome {
+                    font-size: 45px;
+                    font-weight: 600;
+                    font-style: italic;
+                    color: white;
+                }
+
+                .profissao {
+                    font-size: 45px;
+                    font-weight: 600;
+                    font-style: italic;
+                    color: #197EFF;
+                }
+
+            }
+
+            .descricao {
+                max-width: 750px;
+                width: 100%;
+                color: white;
+                font-size: 28px;
+                font-weight: 400;
+            }
+        }
+    }
+    .integranteRigth {
+        background-color: #536376;
+        border-radius: 10px;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        .image {
+            object-fit: cover;
+            width: 500px;
+        }
+
+        .conteudo {
+            padding: 0 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .titulo {
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 35px;
+
+                .nome {
+                    font-size: 45px;
+                    font-weight: 600;
+                    font-style: italic;
+                    color: white;
+                }
+
+                .profissao {
+                    font-size: 45px;
+                    font-weight: 600;
+                    font-style: italic;
+                    color: #197EFF;
+                }
+
+            }
+
+            .descricao {
+                max-width: 750px;
+                width: 100%;
+                color: white;
+                font-size: 28px;
+                font-weight: 400;
+            }
+        }
+    }
+}

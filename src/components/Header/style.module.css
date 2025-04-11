@@ -50,12 +50,13 @@
             align-items: center;
             padding: 10px;
             border-radius: 8px;
-            transition: 0.5s;
+            transition: all 0.5s;
 
             h1 {
                 font-size: 16px;
                 font-weight: 400;
             }
+            
         }
 
         .cadastrar {
@@ -77,13 +78,15 @@
        
         
     }
+    .entrar:hover{
+        background-color: #254162;
+        transform: scale(1.05);
+        transition: all 0.5s;
+        
+    }
+    .cadastrar:hover{
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
 }
-.cadastrar:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-.entrar:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-    
-}
+
