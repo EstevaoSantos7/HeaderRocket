@@ -4,12 +4,13 @@ import Sidebar from '../components/Sidebar'
 import Inicio from "../components/Home";
 import style from '../styles/home.module.css'
 
+
 function Home() {
     const [open, setOpen] = useState(false);
 
     return (
         <>
-            <div className={style.containerHome}>
+            <div className={style.containerTudo}>
                 <Header open={open} setOpen={setOpen} />
                 <div className={style.containerHome}>
                     <Sidebar open={open} />

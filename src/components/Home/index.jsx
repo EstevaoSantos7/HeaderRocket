@@ -1,10 +1,12 @@
 import style from './style.module.css'
 import Logo from '../../images/logo rocket 2.png'
 import ImgBaner from '../../images/baner.png'
+import Hero from '../Hero'
 
 export default function Inicio() {
     return (
         <div className={style.containerInicio}>
+            <div className={style.conteudo}>
             <div className={style.banerInicio}>
                 <div className={style.conteudoBaner}>
                     <div className={style.tituloBaner}>
@@ -20,6 +22,9 @@ export default function Inicio() {
                 <div className={style.imagensCamp}>
                     <img src={ImgBaner} alt="Trofeus" />
                 </div>
+            </div>
+            <Hero/>
+
             </div>
         </div>
 

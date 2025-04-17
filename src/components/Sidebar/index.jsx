@@ -9,6 +9,8 @@ import { GiPokerHand } from "react-icons/gi";
 import { MdOutlineCasino } from "react-icons/md";
 import { TbBallFootball } from "react-icons/tb";
 import { IoHomeOutline } from "react-icons/io5";
+import Sobre from '../../pages/Sobre';
+import Home from '../../pages/Home'
 
 
 
@@ -19,97 +21,97 @@ export default function Sidebar({ open }) {
             {open ?
                 (
                     <div className={style.sidenav}>
-                    <div className={style.elementos}>
+                        <div className={style.elementos}>
 
-                        <div className={style.bloco}>
-                            <IoHomeOutline size={25} color='white' />
-                            <a href="/">Home</a>
-                        </div>
-                        <div className={style.bloco}>
-                            <SlPresent size={25} color='white' />
-                            <a href="/">Promoções</a>
-                        </div>
-                        <div className={style.bloco}>
-                            <CiCreditCard1 size={25} color='white' />
-                            <a href="/">Ticket VIP</a>
-                        </div>
-                        <div className={style.bloco}>
-                            <FaRegComment size={25} color='white' />
-                            <a href="/">Ajuda</a>
-                        </div>
-                        <div className={style.bloco}>
-                            <FaRegQuestionCircle size={25} color='white' />
-                            <a href="/">Sobre</a>
+                            <a className={style.bloco}>
+                                <IoHomeOutline size={25} color='white' />
+                                <a href="/">Home</a>
+                            </a>
+                            <a className={style.bloco}>
+                                <SlPresent size={25} color='white' />
+                                <a href="/">Promoções</a>
+                            </a>
+                            <a className={style.bloco}>
+                                <CiCreditCard1 size={25} color='white' />
+                                <a href="/">Ticket VIP</a>
+                            </a>
+                            <a className={style.bloco}>
+                                <FaRegComment size={25} color='white' />
+                                <a href="/">Ajuda</a>
+                            </a>
+                            <a className={style.bloco}>
+                                <FaRegQuestionCircle size={25} color='white' />
+                                <a href="/sobre">Sobre</a>
 
-                        </div>
-                        <div className={style.bloco}>
-                            <PiMedalDuotone size={25} color='white' />
-                            <a href="/">Ranking de Slots</a>
+                            </a>
+                            <a className={style.bloco}>
+                                <PiMedalDuotone size={25} color='white' />
+                                <a href="/">Ranking de Slots</a>
 
-                        </div>
-                        <div className={style.bloco}>
-                            <FiUser size={25} color='white' />
-                            <a href="/">Conta</a>
+                            </a>
+                            <a className={style.bloco}>
+                                <FiUser size={25} color='white' />
+                                <a href="/">Conta</a>
 
-                        </div>
-
-                    </div>
-                    <div className={style.elementos}>
-
-                        <div className={style.bloco}>
-                            <GiPokerHand size={25} color='white' />
-                            <a href="/">Black Jack</a>
-                        </div>
-                        <div className={style.bloco}>
-                            <PiPokerChipFill size={25} color='white' />
-                            <a href="/">Roleta</a>
-                        </div>
-                        <div className={style.bloco}>
-                            <TbBallFootball size={25} color='white' />
-                            <a href="/">Bacará</a>
-                        </div>
-                        <div className={style.bloco}>
-                            <RiPokerClubsFill size={25} color='white' />
-                            <a href="/">Cassino hold </a>
-                        </div>
-                        <div className={style.bloco}>
-                            <RiPlaneFill size={25} color='white' />
-                            <a href="/">Aviator Game</a>
+                            </a>
 
                         </div>
-                        <div className={style.bloco}>
-                            <PiBomb size={25} color='white' />
-                            <a href="/">Mines</a>
+                        <div className={style.elementos}>
+
+                            <a className={style.bloco}>
+                                <GiPokerHand size={25} color='white' />
+                                <a href="/">Black Jack</a>
+                            </a>
+                            <a className={style.bloco}>
+                                <PiPokerChipFill size={25} color='white' />
+                                <a href="/">Roleta</a>
+                            </a>
+                            <a className={style.bloco}>
+                                <TbBallFootball size={25} color='white' />
+                                <a href="/">Bacará</a>
+                            </a>
+                            <a className={style.bloco}>
+                                <RiPokerClubsFill size={25} color='white' />
+                                <a href="/">Cassino hold </a>
+                            </a>
+                            <a className={style.bloco}>
+                                <RiPlaneFill size={25} color='white' />
+                                <a href="/">Aviator Game</a>
+
+                            </a>
+                            <a className={style.bloco}>
+                                <PiBomb size={25} color='white' />
+                                <a href="/">Mines</a>
+
+                            </a>
 
                         </div>
+                        <div className={style.elementos}>
 
-                    </div>
-                    <div className={style.elementos}>
-
-                        <div className={style.bloco}>
-                            <RiPokerSpadesFill size={25} color='white' />
-                            <a href="/">Cassino</a>
+                            <a className={style.bloco}>
+                                <RiPokerSpadesFill size={25} color='white' />
+                                <a href="/">Cassino</a>
+                            </a>
                         </div>
-                    </div>
-                    <div className={style.elementos}>
+                        <a className={style.elementos}>
 
-                        <div className={style.bloco}>
-                            <MdOutlineCasino size={25} color='white' />
-                            <a href="/">Salão de Jogos</a>
+                            <a className={style.bloco}>
+                                <MdOutlineCasino size={25} color='white' />
+                                <a href="/">Salão de Jogos</a>
+                            </a>
+                        </a>
+                        <div className={style.elementos}>
+
+                            <a className={style.bloco}>
+                                <PiSoccerBallFill size={25} color='white' />
+                                <a href="/">Esportes</a>
+                            </a>
                         </div>
-                    </div>
-                    <div className={style.elementos}>
-
-                        <div className={style.bloco}>
-                            <PiSoccerBallFill size={25} color='white' />
-                            <a href="/">Esportes</a>
-                        </div>
-                    </div>
 
 
 
-                </div>
-                    
+                    </div >
+
 
 
                 )
@@ -118,32 +120,79 @@ export default function Sidebar({ open }) {
                         <div className={style.elementos}>
                             <div className={style.icones}>
 
-                                <IoHomeOutline size={25} color='white' />
-                                <SlPresent size={25} color='white' />
-                                <CiCreditCard1 size={25} color='white' />
-                                <FaRegComment size={25} color='white' />
-                                <FaRegQuestionCircle size={25} color='white' />
-                                <PiMedalDuotone size={25} color='white' />
-                                <FiUser size={25} color='white' />
+                                <a href='/' className={style.caixa}>
+                                    <IoHomeOutline size={25} color='white' />
+                                </a>
+                                <a href='/' className={style.caixa}>
+                                    <SlPresent size={25} color='white' />
+                                    
+                                </a>
+                                <a href='/' className={style.caixa}>
+                                    <CiCreditCard1 size={25} color='white' />
+                                    
+                                </a>
+                                <a href='/' className={style.caixa}>
+                                    <FaRegComment size={25} color='white' />
+                                    
+                                </a>
+                                <a href='/sobre' className={style.caixa}>
+                                    <FaRegQuestionCircle size={25} color='white' />
+                                   
+                                </a>
+                                <a href='/' className={style.caixa}>
+                                    <PiMedalDuotone size={25} color='white' />
+                                    
+                                </a>
+                                <a href='/' className={style.caixa}>
+                                    <FiUser size={25} color='white' />
+                                    
+                                </a>
                             </div>
 
                         </div>
                         <div className={style.elementos}>
                             <div className={style.icones}>
-                                <GiPokerHand size={25} color='white' />
-                                <PiPokerChipFill size={25} color='white' />
-                                <TbBallFootball size={25} color='white' />
-                                <RiPokerClubsFill size={25} color='white' />
-                                <RiPlaneFill size={25} color='white' />
-                                <PiBomb size={25} color='white' />
+                                <a href='/' className={style.caixa}>
+                                    <GiPokerHand size={25} color='white' />
+                                    
+                                </a>
+                                <a href='/' className={style.caixa}>
+                                    <PiPokerChipFill size={25} color='white' />
+                                    
+                                </a>
+                                <a href='/' className={style.caixa}>
+                                    <TbBallFootball size={25} color='white' />
+                                    
+                                </a>
+                                <a href='/' className={style.caixa}>
+                                    <RiPokerClubsFill size={25} color='white' />
+                                    
+                                </a>
+                                <a href='/' className={style.caixa}>
+                                    <RiPlaneFill size={25} color='white' />
+                                    
+                                </a>
+                                <a href='/' className={style.caixa}>
+                                    <PiBomb size={25} color='white' />
+                                    
+                                </a>
                             </div>
 
                         </div>
                         <div className={style.elementosFinal}>
                             <div className={style.icones}>
-                                <RiPokerSpadesFill size={25} color='white' />
-                                <MdOutlineCasino size={25} color='white' />
-                                <PiSoccerBallFill size={25} color='white' />
+                                <a href='/' className={style.caixa}>
+                                    <RiPokerSpadesFill size={25} color='white' />
+                                    
+                                </a>
+                                <a href='/' className={style.caixa}>
+                                    <MdOutlineCasino size={25} color='white' />
+                                    
+                                </a>
+                                <a href='/' className={style.caixa}>
+                                    <PiSoccerBallFill size={25} color='white' />
+                                    
+                                </a>
 
                             </div>
 
