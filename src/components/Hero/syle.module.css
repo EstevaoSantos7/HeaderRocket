@@ -76,10 +76,10 @@
     display: flex;
     gap: 16px;
 
-
 }
 
 .parteBaixa{
+    margin-top: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
