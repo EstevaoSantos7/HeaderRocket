@@ -4,70 +4,301 @@
     background-color: #212C3A;
     align-items: center;
     padding: 25px;
-    
-.conteudo{
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    width: 90%;
-    .banerInicio {
-        padding: 25px;
-        display: flex;
-        flex-direction: row;
-        background-color: #2B3B4F;
-        border-radius: 10px;
-        gap: 45px;
-        justify-content: center;
-        width: 100%;
 
-        .conteudoBaner {
+    .conteudo {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        width: 90%;
+
+        .banerInicio {
+            padding: 25px;
             display: flex;
-            flex-direction: column;
-            max-width: 650px;
+            flex-direction: row;
+            background-color: #2B3B4F;
+            border-radius: 10px;
+            gap: 45px;
+            justify-content: center;
+            align-items: center; 
+            flex-wrap: wrap; 
             width: 100%;
 
-            justify-content: space-between;
-
-            .tituloBaner {
+            .conteudoBaner {
                 display: flex;
-                flex-direction: row;
-                align-items: center;
+                flex-direction: column;
+                max-width: 650px;
+                width: 100%;
+                justify-content: space-between;
 
-                h2 {
-                    color: white;
-                    font-size: 40px;
+                .tituloBaner {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    h2 {
+                        color: white;
+                        font-size: 40px;
+                    }
+
+                    img {
+                        padding-bottom: 5px;
+                        max-height: 50px; 
+                        margin-left: 10px;
+                    }
                 }
+
+                h3 {
+                    color: white;
+                    font-size: 25px;
+                }
+
+                .botaoCadastrar {
+                    width: 50%;
+                    padding: 15px;
+                    color: #197EFF;
+                    font-size: 25px;
+                    border-radius: 12px;
+                    transition: 0.5s;
+                    border: 0;
+                    cursor: pointer;
+
+                    &:hover {
+                        transition: 0.5s;
+                        transform: scale(1.04);
+                        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                            rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                            rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                            rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                            rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                    }
+                }
+            }
+
+            .imagensCamp {
+                max-width: 300px;
+                width: 100%;
 
                 img {
-                    padding-bottom: 5px;
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
                 }
             }
+        }
+    }
+}
 
-            h3 {
+
+.caixasCampeonato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    .caixaCampeonato {
+        background: #2B3B4F;
+        border-radius: 10px;
+        border: 1px solid rgb(193, 193, 193);
+        max-width: 590px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+
+        .conteudoCampeonato {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            max-width: 400px;
+            width: 100%;
+            h1{
                 color: white;
-                font-size: 25px;
-
             }
-
-            .botaoCadastrar {
-                width: 50%;
-                padding: 15px;
+            p{
+                color: white;
+            }
+            .botaoApostar{
+                padding: 6px;
+                border-radius: 12px;
+                max-width: 200px;
+                width: 100%;
                 color: #197EFF;
                 font-size: 25px;
-                border-radius: 12px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.5s;
+                border: 0;
+                &:hover {
+                    transition: 0.5s;
+                    transform: scale(1.07);
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        
+                }
             }
-        }
+            .imagensCampeonato {
 
-        .imagensCamp {
-            img {
                 object-fit: cover;
                 width: 330px;
                 border-radius: 10px;
             }
         }
+    }
+
+  
 
 
+}
+
+.tituloBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+
+    h1 {
+        color: white;
+        font-size: 40px;
+    }
+
+    .verMaisBotao {
+        transition: 0.5s;
+
+        button {
+            padding: 6px 40px;
+            border-radius: 11px;
+            color: #197EFF;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0;
+            cursor: pointer;
+
+        }
+
+
+        &:hover {
+            transition: 0.5s;
+            transform: scale(1.1);
+
+        }
     }
 }
-   
+
+.timesAposta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 20px;
+}
+
+.caixaFut {
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    background: #1E3B61;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 32px;
+
+    .time {
+
+        padding: 10px 20px 0px 20px;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 35px;
+        width: 100%;
+
+        .timeAposta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            p {
+                color: white;
+            }
+
+            img {
+                width: 60px;
+                height: 60px;
+
+            }
+
+        }
+
+    }
+
+    .meio {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        p {
+            color: white;
+        }
+    }
+
+    hr {
+        width: 100%;
+        height: 3px;
+        background-color: #dddddd;
+    }
+
+    .odds {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 10px;
+
+        .vitoria {
+            padding: 10px 15px;
+            background-color: #15DF6D;
+            border-radius: 40px;
+            max-width: 150px;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+
+            span {
+                color: white;
+                font-size: 25px;
+                font-weight: 700
+            }
+        }
+
+        .empate {
+            padding: 10px 15px;
+            background-color: #406493;
+            border-radius: 40px;
+            max-width: 150px;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+
+            span {
+                color: white;
+                font-size: 25px;
+                font-weight: 700
+            }
+        }
+
+        .derrota {
+            padding: 10px 15px;
+            background-color: #E11D20;
+            border-radius: 40px;
+            max-width: 150px;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+
+            span {
+                color: white;
+                font-size: 25px;
+                font-weight: 700
+            }
+        }
+    }
 }

@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Sidebar from '../components/Sidebar'
 import Inicio from "../components/Home";
 import style from '../styles/home.module.css'
+import Rodape from "../components/Rodape";
 
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
                     <Sidebar open={open} />
                     <div className={style.conteudoHome}>
                         <Inicio />
+                        <Rodape/>
                     </div>
                 </div>
             </div>

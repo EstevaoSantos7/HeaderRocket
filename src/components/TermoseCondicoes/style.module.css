@@ -1,0 +1,84 @@
+.TermoseCondicoes{
+    background-color: #212C3A;
+    padding-top: 40px;
+}
+
+.titulo{
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    .cor{
+        color: #197EFF;
+    }
+    
+}
+.introducao{
+    h1{
+    color: #197EFF;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+}
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    .texto1{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 18px;
+        h2{
+            color: #197EFF;
+            font-size: 22px;
+            font-weight: 500;
+        }
+        h1{
+            font-size: 22px;
+            font-weight: 500;
+
+        }
+    }
+}
+.footer{
+    color: white;
+    margin-top: 180px;
+    padding-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .footer1{
+        .footerText{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 5px;
+            font-weight: 400;
+            #suporte{
+                color: #197EFF;
+                text-decoration: underline;
+                text-underline-offset: 3px;
+            }
+            #central{
+                color: #197EFF;
+                
+            }
+        }
+    }
+}
+

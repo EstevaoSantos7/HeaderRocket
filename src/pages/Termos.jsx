@@ -1,13 +1,11 @@
-import { useState } from "react";
-import Header from "../components/Header";
-import Sidebar from '../components/Sidebar'
-import SobreNos from '../components/SobreNos'
-import style from '../styles/sobre.module.css'
-import Rodape from '../components/Rodape'
+import style from '../styles/termos.module.css'
+import TermosCondicao from '../components/TermoseCondicoes'
+import { useState } from 'react';
+import Header from '../components/Header';
+import Sidebar from '../components/Sidebar';
+import Rodape from '../components/Rodape';
 
-
-
-function Sobre() {
+function Termos() {
     const [open, setOpen] = useState(false);
 
     return (
@@ -16,7 +14,7 @@ function Sobre() {
             <div className={style.containerSobre}>
                 <Sidebar open={open} />
                 <div className={style.conteudoSobre}>
-                    <SobreNos />
+                    <TermosCondicao />
                     <Rodape/>
                 </div>
               
@@ -26,4 +24,4 @@ function Sobre() {
 }
 
 
-export default Sobre;
+export default Termos;

@@ -3,7 +3,7 @@
     width: 100%;
     height: 60vh;
     background-color: #080c1c;
-   
+
 
     video {
         position: absolute;
@@ -18,7 +18,7 @@
 
 
     .conteudo {
-        
+
         position: absolute;
         z-index: 2;
         width: 100%;
@@ -30,12 +30,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: linear-gradient(to right, 
-        rgba(0, 0, 0, 1) 40%, 
-        rgba(0, 0, 0, 0.8) 50%, 
-        rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(to right,
+                rgba(0, 0, 0, 1) 40%,
+                rgba(0, 0, 0, 0.8) 50%,
+                rgba(0, 0, 0, 0) 100%);
 
-        .infoJogo{
+        .infoJogo {
             font-size: 26px;
         }
     }
@@ -53,7 +53,7 @@
     }
 
     p {
-   
+
         font-size: 16px;
         max-width: 400px;
     }
@@ -63,7 +63,8 @@
         gap: 16px;
         margin-bottom: 16px;
         flex-direction: column;
-        .times{
+
+        .times {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -78,19 +79,22 @@
 
 }
 
-.parteBaixa{
+.parteBaixa {
     margin-top: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 400px;
-    .prazo{
+
+    .prazo {
         display: flex;
-        flex-direction: column; 
-        p{
+        flex-direction: column;
+
+        p {
             font-size: 20px;
         }
-        .prazoHorario{
+
+        .prazoHorario {
             font-size: 20px;
             font-weight: 500;
         }
@@ -99,15 +103,17 @@
 
 .botaoInfo {
     display: flex;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 25px;
     border: 1px solid black;
     padding: 14px;
     border-radius: 12px;
-    transition: 0.5s;
+border: 0;
     align-items: center;
     color: #2994f1;
     height: 80%;
+    transition: 0.5s;
+cursor: pointer;
     &:hover {
         transition: 0.5s;
         transform: scale(1.1);
