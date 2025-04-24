@@ -4,6 +4,19 @@
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 15px;
+    a{
+        color: #8797AC;
+        font-size: 18px;
+        text-decoration: none;
+        
+        &:hover{
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            transition:  0.5s;
+            
+    
+        }
+    }
     .esportes{
         display: flex;
         flex-direction: column;
@@ -93,17 +106,4 @@
     .direitos{
         margin-bottom: 40px;
 }
-}
-a{
-    color: #8797AC;
-    font-size: 18px;
-    text-decoration: none;
-    
-    &:hover{
-        text-decoration: underline;
-        text-underline-offset: 5px;
-        transition:  0.5s;
-        
-
-    }
 }

@@ -1,0 +1,54 @@
+
+
+.secaoCarrossel{
+  background-color: #e5eef5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    .tituloSerie{
+        padding: 15px;
+    }
+}
+.carrossel{
+   
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    justify-content: space-between;
+    .btnmover{
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+}
+.carrosselItens{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    flex: 1;
+    margin: 12px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    img{
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+    .informacaoCarrosel{
+        padding: 8px;
+    }
+
+}
+

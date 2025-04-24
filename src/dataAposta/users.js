@@ -1,13 +1,43 @@
-import RealMadrid from '../images/realmadrid (1).png'
-import Bayer from '../images/bayer.png'
+import Bayern from '../imagens/imagensTimes/bayern munich.png'
+import Inter from '../imagens/imagensTimes/inter de milão.png'
+import Barcelona from '../imagens/imagensTimes/Barcelona FC.png'
+import Benfica from '../imagens/imagensTimes/Benfica.png'
+import Liverpool from '../imagens/imagensTimes/Liverpool FC.png'
+import Juventus from '../imagens/imagensTimes/Juventus.png'
+import Arsenal from '../imagens/imagensTimes/Arsenal.png'
+import United from '../imagens/imagensTimes/United.png'
+import Psg from '../imagens/imagensTimes/PSG.png'
+import Tottenham from '../imagens/imagensTimes/Tottenham.png'
+import WestHam from '../imagens/imagensTimes/West Ham.png'
+import RealMadrid from '../imagens/imagensTimes/Real Madrid.png'
+import Porto from '../imagens/imagensTimes/Porto.png'
+import Sporting from '../imagens/imagensTimes/Sporting PT.png'
+import Borussia from '../imagens/imagensTimes/Borussia.png'
+import Miami from '../imagens/imagensTimes/Miami Heat.png'
+import Lakers from '../imagens/imagensTimes/Lakers.png'
+import Toronto from '../imagens/imagensTimes/Toronto Raptors.png'
+import Boston from '../imagens/imagensTimes/Boston Celtic.png'
+import Chicago from '../imagens/imagensTimes/Chicago Bulls.png'
+import Phx from '../imagens/imagensTimes/PHX.png'
+import Orlando from '../imagens/imagensTimes/Orlando magic.png'
+import Atlanta from '../imagens/imagensTimes/Atlanta Hawks.png'
+import Memphis from '../imagens/imagensTimes/.Memphis Grizzlies.png'
+import Houston from '../imagens/imagensTimes/.Houston Rockets.png'
+import Kings from '../imagens/imagensTimes/.Kings.png'
+import Washington from '../imagens/imagensTimes/Washington Wizards.png'
+
+
+
+
+
 
 const apostas = [
   {
     id: 1,
-    timeCasa: "Manchester City",
-    timeFora: "Tottenham",
-    imagemTimeCasa: RealMadrid,
-    imagemTimeFora: Bayer,
+    timeCasa: "Bayern Munique",
+    timeFora: "Inter de Milão",
+    imagemTimeCasa: Bayern,
+    imagemTimeFora: Inter,
     resultadoCasa: "4.5",
     resultadoEmpate: "3.3",
     resultadoFora: "7.1",
@@ -20,14 +50,16 @@ const apostas = [
     cartaoAmareloCasa: "5.10",
     cartaoVermelhoCasa: "3.95",
     cartaoAmareloFora: "6.20",
-    cartaoVermelhoFora: "7.15"
+    cartaoVermelhoFora: "7.15",
+    generoJogo: "Feminino",
+    horarioJogo: "19:00",
   },
   {
     id: 2,
-    timeCasa: "Roma",
-    timeFora: "Lazio",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "Barcelona ",
+    timeFora: "Benfica",
+    imagemTimeCasa: Barcelona,
+    imagemTimeFora: Benfica,
     resultadoCasa: "5.2",
     resultadoEmpate: "3.6",
     resultadoFora: "6.7",
@@ -40,14 +72,16 @@ const apostas = [
     cartaoAmareloCasa: "5.25",
     cartaoVermelhoCasa: "3.70",
     cartaoAmareloFora: "6.00",
-    cartaoVermelhoFora: "6.85"
+    cartaoVermelhoFora: "6.85",
+    generoJogo: "Masculino",
+    horarioJogo: "14:00",
   },
   {
     id: 3,
-    timeCasa: "Leipzig",
-    timeFora: "Leverkusen",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "Liverpool",
+    timeFora: "Juventus",
+    imagemTimeCasa: Liverpool,
+    imagemTimeFora: Juventus,
     resultadoCasa: "4.8",
     resultadoEmpate: "3.5",
     resultadoFora: "7.3",
@@ -60,14 +94,16 @@ const apostas = [
     cartaoAmareloCasa: "5.00",
     cartaoVermelhoCasa: "4.00",
     cartaoAmareloFora: "6.10",
-    cartaoVermelhoFora: "7.10"
+    cartaoVermelhoFora: "7.10",
+    generoJogo: "Masculino",
+    horarioJogo: "16:45"
   },
   {
     id: 4,
-    timeCasa: "Celtic",
-    timeFora: "Rangers",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "Borussia",
+    timeFora: "Arsenal",
+    imagemTimeCasa: Borussia,
+    imagemTimeFora: Arsenal,
     resultadoCasa: "5.6",
     resultadoEmpate: "3.7",
     resultadoFora: "6.2",
@@ -80,14 +116,16 @@ const apostas = [
     cartaoAmareloCasa: "5.15",
     cartaoVermelhoCasa: "3.85",
     cartaoAmareloFora: "6.05",
-    cartaoVermelhoFora: "7.20"
+    cartaoVermelhoFora: "7.20",
+    generoJogo: "Feminino",
+    horarioJogo: "20:00"
   },
   {
     id: 5,
-    timeCasa: "Boca Juniors",
-    timeFora: "River Plate",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "M.United",
+    timeFora: "PSG",
+    imagemTimeCasa: United,
+    imagemTimeFora: Psg,
     resultadoCasa: "4.9",
     resultadoEmpate: "3.2",
     resultadoFora: "7.4",
@@ -100,14 +138,16 @@ const apostas = [
     cartaoAmareloCasa: "5.20",
     cartaoVermelhoCasa: "4.10",
     cartaoAmareloFora: "6.30",
-    cartaoVermelhoFora: "7.05"
+    cartaoVermelhoFora: "7.05",
+    generoJogo: "Masculino",
+    horarioJogo: "19:30"
   },
   {
     id: 6,
-    timeCasa: "Galatasaray",
-    timeFora: "Fenerbahçe",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "Tottenham",
+    timeFora: "West Ham",
+    imagemTimeCasa: Tottenham,
+    imagemTimeFora: WestHam,
     resultadoCasa: "5.3",
     resultadoEmpate: "3.4",
     resultadoFora: "6.9",
@@ -120,14 +160,16 @@ const apostas = [
     cartaoAmareloCasa: "5.30",
     cartaoVermelhoCasa: "3.90",
     cartaoAmareloFora: "6.15",
-    cartaoVermelhoFora: "7.25"
+    cartaoVermelhoFora: "7.25",
+    generoJogo: "Masculino",
+    horarioJogo: "20:00",
   },
   {
     id: 7,
-    timeCasa: "Corinthians",
-    timeFora: "São Paulo",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "FC Barcelona",
+    timeFora: "Real Madrid",
+    imagemTimeCasa: Barcelona,
+    imagemTimeFora: RealMadrid,
     resultadoCasa: "4.7",
     resultadoEmpate: "3.5",
     resultadoFora: "7.0",
@@ -140,14 +182,16 @@ const apostas = [
     cartaoAmareloCasa: "5.00",
     cartaoVermelhoCasa: "4.05",
     cartaoAmareloFora: "6.00",
-    cartaoVermelhoFora: "7.30"
+    cartaoVermelhoFora: "7.30",
+    generoJogo: "Masculino",
+    horarioJogo: "14;00",
   },
   {
     id: 8,
-    timeCasa: "Grêmio",
-    timeFora: "Internacional",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "Porto",
+    timeFora: "Sporting",
+    imagemTimeCasa: Porto,
+    imagemTimeFora: Sporting,
     resultadoCasa: "5.0",
     resultadoEmpate: "3.6",
     resultadoFora: "6.6",
@@ -160,14 +204,16 @@ const apostas = [
     cartaoAmareloCasa: "5.40",
     cartaoVermelhoCasa: "3.80",
     cartaoAmareloFora: "6.10",
-    cartaoVermelhoFora: "7.40"
+    cartaoVermelhoFora: "7.40",
+    generoJogo: "Masculino",
+    horarioJogo: "14:45",
   },
   {
     id: 9,
-    timeCasa: "Besiktas",
-    timeFora: "Trabzonspor",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "Bayern",
+    timeFora: "Borussia",
+    imagemTimeCasa: Bayern,
+    imagemTimeFora: Borussia,
     resultadoCasa: "4.6",
     resultadoEmpate: "3.3",
     resultadoFora: "7.2",
@@ -180,14 +226,16 @@ const apostas = [
     cartaoAmareloCasa: "5.25",
     cartaoVermelhoCasa: "3.95",
     cartaoAmareloFora: "6.00",
-    cartaoVermelhoFora: "7.35"
+    cartaoVermelhoFora: "7.35",
+    generoJogo: "Masculino",
+    horarioJogo: "21;00",
   },
   {
     id: 10,
-    timeCasa: "Newcastle",
-    timeFora: "Everton",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "Atlanta Hawks",
+    timeFora: "Miami Heat",
+    imagemTimeCasa: Atlanta,
+    imagemTimeFora: Miami,
     resultadoCasa: "5.1",
     resultadoEmpate: "3.4",
     resultadoFora: "6.8",
@@ -200,14 +248,17 @@ const apostas = [
     cartaoAmareloCasa: "5.35",
     cartaoVermelhoCasa: "3.85",
     cartaoAmareloFora: "6.20",
-    cartaoVermelhoFora: "7.10"
+    cartaoVermelhoFora: "7.10",
+    generoJogo: "Masculino",
+    horarioJogo: "21:00",
+
   },
   {
     id: 11,
-    timeCasa: "Ajax",
-    timeFora: "PSV",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "Lakers",
+    timeFora: "Toronto Raptors",
+    imagemTimeCasa: Lakers,
+    imagemTimeFora: Toronto,
     resultadoCasa: "4.8",
     resultadoEmpate: "3.3",
     resultadoFora: "6.9",
@@ -220,14 +271,16 @@ const apostas = [
     cartaoAmareloCasa: "5.30",
     cartaoVermelhoCasa: "3.95",
     cartaoAmareloFora: "6.20",
-    cartaoVermelhoFora: "7.40"
+    cartaoVermelhoFora: "7.40",
+    generoJogo: "Masculino",
+    horarioJogo: "22:00",
   },
   {
     id: 12,
-    timeCasa: "Benfica",
-    timeFora: "Sporting",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "Boston Celtic",
+    timeFora: "Orlando magic",
+    imagemTimeCasa: Boston,
+    imagemTimeFora: Orlando,
     resultadoCasa: "5.3",
     resultadoEmpate: "3.5",
     resultadoFora: "6.6",
@@ -240,14 +293,16 @@ const apostas = [
     cartaoAmareloCasa: "5.40",
     cartaoVermelhoCasa: "4.00",
     cartaoAmareloFora: "6.00",
-    cartaoVermelhoFora: "7.15"
+    cartaoVermelhoFora: "7.15",
+    generoJogo: "Masculino",
+    horarioJogo: "14:00",
   },
   {
     id: 13,
-    timeCasa: "Napoli",
-    timeFora: "Atalanta",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "Chicago Bulls",
+    timeFora: "Phoenix Suns",
+    imagemTimeCasa: Chicago,
+    imagemTimeFora: Phx,
     resultadoCasa: "4.6",
     resultadoEmpate: "3.2",
     resultadoFora: "7.5",
@@ -260,14 +315,16 @@ const apostas = [
     cartaoAmareloCasa: "5.10",
     cartaoVermelhoCasa: "3.70",
     cartaoAmareloFora: "6.15",
-    cartaoVermelhoFora: "7.30"
+    cartaoVermelhoFora: "7.30",
+    generoJogo: "Masculino",
+    horarioJogo: "20:00"
   },
   {
     id: 14,
-    timeCasa: "Sevilla",
-    timeFora: "Valencia",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "Orlando Magic",
+    timeFora: "Atlanta Hawks",
+    imagemTimeCasa: Orlando,
+    imagemTimeFora: Atlanta,
     resultadoCasa: "5.0",
     resultadoEmpate: "3.6",
     resultadoFora: "6.3",
@@ -280,14 +337,16 @@ const apostas = [
     cartaoAmareloCasa: "5.35",
     cartaoVermelhoCasa: "4.10",
     cartaoAmareloFora: "6.05",
-    cartaoVermelhoFora: "7.05"
+    cartaoVermelhoFora: "7.05",
+    generoJogo: "Feminino",
+    horarioJogo: "23:00",
   },
   {
     id: 15,
-    timeCasa: "Lyon",
-    timeFora: "Marseille",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "Toronto Raptors",
+    timeFora: "Phoenix Suns",
+    imagemTimeCasa: Toronto,
+    imagemTimeFora: Phx,
     resultadoCasa: "4.9",
     resultadoEmpate: "3.4",
     resultadoFora: "7.1",
@@ -300,14 +359,16 @@ const apostas = [
     cartaoAmareloCasa: "5.20",
     cartaoVermelhoCasa: "3.90",
     cartaoAmareloFora: "6.25",
-    cartaoVermelhoFora: "7.20"
+    cartaoVermelhoFora: "7.20",
+    generoJogo: "Feminino",
+    horarioJogo: "19:00",
   },
   {
     id: 16,
-    timeCasa: "Flamengo",
-    timeFora: "Palmeiras",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "Memphis Grizzlies",
+    timeFora: "Houston Rockets",
+    imagemTimeCasa: Memphis,
+    imagemTimeFora: Houston,
     resultadoCasa: "5.4",
     resultadoEmpate: "3.7",
     resultadoFora: "6.1",
@@ -320,14 +381,16 @@ const apostas = [
     cartaoAmareloCasa: "5.00",
     cartaoVermelhoCasa: "4.00",
     cartaoAmareloFora: "6.00",
-    cartaoVermelhoFora: "7.35"
+    cartaoVermelhoFora: "7.35",
+    generoJogo: "Masculino",
+    horarioJogo: "21:",
   },
   {
     id: 17,
-    timeCasa: "Porto",
-    timeFora: "Braga",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "Boston Celtics",
+    timeFora: "Sacramento Kings",
+    imagemTimeCasa: Boston,
+    imagemTimeFora: Kings,
     resultadoCasa: "4.7",
     resultadoEmpate: "3.2",
     resultadoFora: "7.6",
@@ -340,14 +403,16 @@ const apostas = [
     cartaoAmareloCasa: "5.15",
     cartaoVermelhoCasa: "3.95",
     cartaoAmareloFora: "6.10",
-    cartaoVermelhoFora: "7.45"
+    cartaoVermelhoFora: "7.45",
+    generoJogo: "Masculino",
+    horarioJogo: "14;45",
   },
   {
     id: 18,
-    timeCasa: "Shakhtar",
-    timeFora: "Dynamo Kyiv",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
+    timeCasa: "Atlanta Hawks",
+    timeFora: "Washington Wizards",
+    imagemTimeCasa: Atlanta,
+    imagemTimeFora: Washington,
     resultadoCasa: "5.1",
     resultadoEmpate: "3.6",
     resultadoFora: "6.2",
@@ -360,49 +425,9 @@ const apostas = [
     cartaoAmareloCasa: "5.30",
     cartaoVermelhoCasa: "3.85",
     cartaoAmareloFora: "6.20",
-    cartaoVermelhoFora: "7.30"
+    cartaoVermelhoFora: "7.30",
+    generoJogo: "Masculino",
+    horarioJogo: "21:00",
   },
-  {
-    id: 19,
-    timeCasa: "Anderlecht",
-    timeFora: "Club Brugge",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
-    resultadoCasa: "4.6",
-    resultadoEmpate: "3.3",
-    resultadoFora: "7.4",
-    ambosMarcamSim: "4.20",
-    ambosMarcamNão: "4.05",
-    maisde5FaltasCasa: "4.20",
-    menosde5FaltasCasa: "5.15",
-    maisde5FaltasFora: "4.50",
-    menosde5FaltasFora: "6.05",
-    cartaoAmareloCasa: "5.25",
-    cartaoVermelhoCasa: "3.80",
-    cartaoAmareloFora: "6.10",
-    cartaoVermelhoFora: "7.25"
-  },
-  {
-    id: 20,
-    timeCasa: "Cruz Azul",
-    timeFora: "Club América",
-    imagemTimeCasa: "link",
-    imagemTimeFora: "link",
-    resultadoCasa: "5.2",
-    resultadoEmpate: "3.5",
-    resultadoFora: "6.5",
-    ambosMarcamSim: "4.40",
-    ambosMarcamNão: "3.95",
-    maisde5FaltasCasa: "4.00",
-    menosde5FaltasCasa: "5.30",
-    maisde5FaltasFora: "4.55",
-    menosde5FaltasFora: "6.00",
-    cartaoAmareloCasa: "5.40",
-    cartaoVermelhoCasa: "3.90",
-    cartaoAmareloFora: "6.05",
-    cartaoVermelhoFora: "7.50"
-  }
+
 ];
-
-
-export default apostas;

@@ -11,9 +11,9 @@ function Termos() {
     return (
         <div className={style.containerTudo}>
             <Header open={open} setOpen={setOpen} />
-            <div className={style.containerSobre}>
+            <div className={style.containerTermos}>
                 <Sidebar open={open} />
-                <div className={style.conteudoSobre}>
+                <div className={style.conteudoTermos}>
                     <TermosCondicao />
                     <Rodape/>
                 </div>

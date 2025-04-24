@@ -19,8 +19,8 @@
             border-radius: 10px;
             gap: 45px;
             justify-content: center;
-            align-items: center; 
-            flex-wrap: wrap; 
+            align-items: center;
+            flex-wrap: wrap;
             width: 100%;
 
             .conteudoBaner {
@@ -42,7 +42,7 @@
 
                     img {
                         padding-bottom: 5px;
-                        max-height: 50px; 
+                        max-height: 50px;
                         margin-left: 10px;
                     }
                 }
@@ -93,6 +93,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
+
     .caixaCampeonato {
         background: #2B3B4F;
         border-radius: 10px;
@@ -109,13 +110,16 @@
             gap: 25px;
             max-width: 400px;
             width: 100%;
-            h1{
+
+            h1 {
                 color: white;
             }
-            p{
+
+            p {
                 color: white;
             }
-            .botaoApostar{
+
+            .botaoApostar {
                 padding: 6px;
                 border-radius: 12px;
                 max-width: 200px;
@@ -126,13 +130,15 @@
                 cursor: pointer;
                 transition: 0.5s;
                 border: 0;
+
                 &:hover {
                     transition: 0.5s;
                     transform: scale(1.07);
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-        
+
                 }
             }
+
             .imagensCampeonato {
 
                 object-fit: cover;
@@ -142,7 +148,7 @@
         }
     }
 
-  
+
 
 
 }
@@ -299,6 +305,67 @@
                 font-size: 25px;
                 font-weight: 700
             }
+        }
+    }
+}
+
+.containerSlots {
+    .tituloCima {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 50px;
+
+        h1 {
+            color: white;
+            font-size: 40px;
+        }
+
+        .seta {
+            button {
+                background: transparent;
+                border: 1px solid white;
+                border-radius: 40px;
+                display: flex;
+                gap: 10px;
+                padding: 10px;
+            }
+
+        }
+    }
+
+    .carroselSlots {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+
+        .slots {
+            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1fr(repeat(5));
+
+        }
+    }
+}
+
+.containerPatrocinadores {
+    .tituloCima {
+        padding-bottom: 50px;
+        h1 {
+            color: white;
+            font-size: 40px;
+        }
+    }
+
+    .caixasPatrocinio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .gridPatrocionios {
+            display: grid;
+            grid-template-columns: 1fr repeat(4);
+
         }
     }
 }
