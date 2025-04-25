@@ -30,20 +30,22 @@
             .titulo {
                 display: flex;
                 flex-direction: row;
-                gap: 15px;
+                gap: 10px;
                 justify-content: center;
                 align-items: center;
                 margin-bottom: 35px;
+                width: 100%;
 
                 .nome {
-                    font-size: 45px;
+                    
+                    font-size: 42px;
                     font-weight: 600;
                     font-style: italic;
                     color: white;
                 }
 
                 .profissao {
-                    font-size: 45px;
+                    font-size: 35px;
                     font-weight: 600;
                     font-style: italic;
                     color: #197EFF;
@@ -91,18 +93,20 @@
                 margin-bottom: 35px;
 
                 .nome {
-                    font-size: 45px;
+                    
+                    font-size: 42px;
                     font-weight: 600;
                     font-style: italic;
                     color: white;
                 }
 
                 .profissao {
-                    font-size: 45px;
+                    font-size: 35px;
                     font-weight: 600;
                     font-style: italic;
                     color: #197EFF;
                 }
+
 
             }
 

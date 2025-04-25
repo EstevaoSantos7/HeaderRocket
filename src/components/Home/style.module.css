@@ -12,7 +12,7 @@
         width: 90%;
 
         .banerInicio {
-            padding: 25px;
+            padding: 20px;
             display: flex;
             flex-direction: row;
             background-color: #2B3B4F;
@@ -23,44 +23,57 @@
             flex-wrap: wrap;
             width: 100%;
 
+            .imagensCamp {
+                img {
+                    padding-bottom: 5px;
+                    max-height: 400px;
+                    margin-left: 10px;
+                    border-radius: 10px;
+
+                }
+            }
+
             .conteudoBaner {
                 display: flex;
                 flex-direction: column;
                 max-width: 650px;
                 width: 100%;
                 justify-content: space-between;
+                gap: 45px;
 
                 .tituloBaner {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
 
+
                     h2 {
+                        margin-top: 15px;
                         color: white;
                         font-size: 40px;
                     }
 
-                    img {
-                        padding-bottom: 5px;
-                        max-height: 50px;
-                        margin-left: 10px;
-                    }
+
                 }
 
                 h3 {
                     color: white;
                     font-size: 25px;
+                    font-weight: 500;
+                    max-width: 500px;
                 }
 
                 .botaoCadastrar {
                     width: 50%;
                     padding: 15px;
-                    color: #197EFF;
+                    color: #ffff;
                     font-size: 25px;
                     border-radius: 12px;
+                    font-weight: 600;
                     transition: 0.5s;
                     border: 0;
                     cursor: pointer;
+                    background-color: #197EFF;
 
                     &:hover {
                         transition: 0.5s;
@@ -75,7 +88,7 @@
             }
 
             .imagensCamp {
-                max-width: 300px;
+                max-width: 350px;
                 width: 100%;
 
                 img {
@@ -124,7 +137,8 @@
                 border-radius: 12px;
                 max-width: 200px;
                 width: 100%;
-                color: #197EFF;
+                color: #fff;
+                background-color: #197EFF;
                 font-size: 25px;
                 font-weight: 600;
                 cursor: pointer;
@@ -139,11 +153,17 @@
                 }
             }
 
-            .imagensCampeonato {
+
+        }
+
+        .imagemCampeonato {
+
+            img {
 
                 object-fit: cover;
-                width: 330px;
+                width: 230px;
                 border-radius: 10px;
+
             }
         }
     }
@@ -240,11 +260,27 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
 
         p {
             color: white;
         }
+
+        .genero {
+            font-size: 35px;
+            font-weight: 400;
+        }
+
+        .xis {
+            font-size: 35px;
+            font-weight: 800;
+        }
+
+        .horario {
+            font-size: 25px;
+            font-weight: 500;
+        }
+
     }
 
     hr {
@@ -267,6 +303,13 @@
             width: 100%;
             text-align: center;
             align-items: center;
+            transition: all 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.02);
+                background-color: #00ff6e;
+            }
 
             span {
                 color: white;
@@ -283,6 +326,13 @@
             width: 100%;
             text-align: center;
             align-items: center;
+            transition: all 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.02);
+                background-color: #1e66c5;
+            }
 
             span {
                 color: white;
@@ -299,6 +349,13 @@
             width: 100%;
             text-align: center;
             align-items: center;
+            transition: all 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.02);
+                background-color: #ff0004;
+            }
 
             span {
                 color: white;
@@ -350,7 +407,8 @@
 
 .containerPatrocinadores {
     padding-bottom: 50px;
- padding-top: 30px;
+    padding-top: 30px;
+
     .tituloCima {
         padding-bottom: 50px;
 
@@ -371,8 +429,8 @@
             align-items: center;
             flex-direction: row;
 
-            .caixaPatrocinio{
-                background-color:#1D2836;
+            .caixaPatrocinio {
+                background-color: #1D2836;
                 border-radius: 20px;
                 padding: 10px;
                 height: 100%;
@@ -381,10 +439,11 @@
                 justify-content: center;
                 align-items: center;
                 box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-            transition: all 0.5s;
-                &:hover{
-                transform: scale(1.06);
-            }
+                transition: all 0.5s;
+
+                &:hover {
+                    transform: scale(1.06);
+                }
             }
         }
     }

@@ -9,8 +9,10 @@ import { GiPokerHand } from "react-icons/gi";
 import { MdOutlineCasino } from "react-icons/md";
 import { TbBallFootball } from "react-icons/tb";
 import { IoHomeOutline } from "react-icons/io5";
+import { GiPresent } from "react-icons/gi";
 import Sobre from '../../pages/Sobre';
 import Home from '../../pages/Home'
+import Lobby from '../../pages/Lobby';
 
 
 
@@ -90,7 +92,14 @@ export default function Sidebar({ open }) {
 
                             <a className={style.bloco}>
                                 <RiPokerSpadesFill size={25} color='white' />
-                                <a href="/">Cassino</a>
+                                <a href="/lobby">Cassino</a>
+                            </a>
+                        </div>
+                        <div className={style.elementos}>
+
+                            <a className={style.bloco}>
+                                <GiPresent  size={25} color='white' />
+                                <a href="/">Cassino ao vivo</a>
                             </a>
                         </div>
                         <a className={style.elementos}>
@@ -125,27 +134,27 @@ export default function Sidebar({ open }) {
                                 </a>
                                 <a href='/' className={style.caixa}>
                                     <SlPresent size={25} color='white' />
-                                    
+
                                 </a>
                                 <a href='/' className={style.caixa}>
                                     <CiCreditCard1 size={25} color='white' />
-                                    
+
                                 </a>
                                 <a href='/' className={style.caixa}>
                                     <FaRegComment size={25} color='white' />
-                                    
+
                                 </a>
                                 <a href='/sobre' className={style.caixa}>
                                     <FaRegQuestionCircle size={25} color='white' />
-                                   
+
                                 </a>
                                 <a href='/' className={style.caixa}>
                                     <PiMedalDuotone size={25} color='white' />
-                                    
+
                                 </a>
                                 <a href='/' className={style.caixa}>
                                     <FiUser size={25} color='white' />
-                                    
+
                                 </a>
                             </div>
 
@@ -154,44 +163,48 @@ export default function Sidebar({ open }) {
                             <div className={style.icones}>
                                 <a href='/' className={style.caixa}>
                                     <GiPokerHand size={25} color='white' />
-                                    
+
                                 </a>
                                 <a href='/' className={style.caixa}>
                                     <PiPokerChipFill size={25} color='white' />
-                                    
+
                                 </a>
                                 <a href='/' className={style.caixa}>
                                     <TbBallFootball size={25} color='white' />
-                                    
+
                                 </a>
                                 <a href='/' className={style.caixa}>
                                     <RiPokerClubsFill size={25} color='white' />
-                                    
+
                                 </a>
                                 <a href='/' className={style.caixa}>
                                     <RiPlaneFill size={25} color='white' />
-                                    
+
                                 </a>
                                 <a href='/' className={style.caixa}>
                                     <PiBomb size={25} color='white' />
-                                    
+
                                 </a>
                             </div>
 
                         </div>
                         <div className={style.elementosFinal}>
                             <div className={style.icones}>
+                                <a href='/lobby' className={style.caixa}>
+                                    <GiPresent size={25} color='white' />
+
+                                </a>
                                 <a href='/' className={style.caixa}>
                                     <RiPokerSpadesFill size={25} color='white' />
-                                    
+
                                 </a>
                                 <a href='/' className={style.caixa}>
                                     <MdOutlineCasino size={25} color='white' />
-                                    
+
                                 </a>
                                 <a href='/' className={style.caixa}>
                                     <PiSoccerBallFill size={25} color='white' />
-                                    
+
                                 </a>
 
                             </div>

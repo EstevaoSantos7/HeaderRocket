@@ -38,6 +38,7 @@ export default function Carrosel4({ titulo, videos }) {
   const item3 = videos[ajustarIndice(indice + 2)];
   const item4 = videos[ajustarIndice(indice + 3)];
   const item5 = videos[ajustarIndice(indice + 4)];
+  const item6 = videos[ajustarIndice(indice + 5)];
 
 
   return (
@@ -69,6 +70,9 @@ export default function Carrosel4({ titulo, videos }) {
           </div>
           <div className={sty.item}>
             <img src={item5.src} alt="item 5" />
+          </div>
+          <div className={sty.item}>
+            <img src={item6.src} alt="item 6" />
           </div>
         </div>
       </div>

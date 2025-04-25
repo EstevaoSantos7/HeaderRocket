@@ -6,8 +6,8 @@ import apostas from '../../dataAposta/users'
 import { IoIosArrowDown } from "react-icons/io";
 import { BsArrowRightSquare, BsArrowLeftSquare } from "react-icons/bs";
 import { MdOutlineArrowCircleRight, MdOutlineArrowCircleLeft } from "react-icons/md";
-import Champions from '../../images/ChampionsLeague.png'
-import Libertadores from '../../images/Conmebol_Libertadores_logo.svg 1.png'
+import Champions from '../../images/championsNewBranca.png'
+import Libertadores from '../../images/libertadores.png'
 
 import Europa from '../../images/patrocinios/europa.png'
 import Gordon from '../../images/patrocinios/gordons.png'
@@ -20,6 +20,9 @@ import blackjack from '../../images/slots/blackjack.png'
 import bigbass from '../../images/slots/bigbass.png'
 import oeste from '../../images/slots/velhoOste.png'
 import Aviator from '../../images/slots/aviao.png'
+import Zeus from '../../images/slots/zeus.png'
+import RipCity from '../../images/slots/ripCity.png'
+import Dice from '../../images/slots/dice.png'
 
 const slots = [
         { src: SpaceMan },
@@ -27,6 +30,9 @@ const slots = [
         { src: bigbass },
         { src: oeste },
         { src: Aviator },
+        { src: Dice },
+        { src: Zeus },
+        { src: RipCity },
     ];
 
 export default function Inicio() {
@@ -64,7 +70,7 @@ export default function Inicio() {
                             </button>
                         </div>
                         <div className={style.imagemCampeonato}>
-                            <img src={Libertadores} alt="" />
+                            <img className={style.imgCampeonato} src={Libertadores} alt="" />
                         </div>
                     </div>
                     <div className={style.caixaCampeonato}>
@@ -77,7 +83,7 @@ export default function Inicio() {
                             </button>
                         </div>
                         <div className={style.imagemCampeonato}>
-                            <img src={Champions} alt="" />
+                            <img className={style.imgCampeonato} src={Champions} alt="" />
                         </div>
                     </div>
                 </div>
@@ -103,9 +109,9 @@ export default function Inicio() {
                                             <p>{aposta.timeCasa}</p>
                                         </div>
                                         <div className={style.meio}>
-                                            <p>Genero</p>
-                                            <p>X</p>
-                                            <p>horario</p>
+                                            <p className={style.genero}>{aposta.generoJogo}</p>
+                                            <p className={style.xis}>X</p>
+                                            <p className={style.horario}>{aposta.horarioJogo}</p>
                                         </div>
                                         <div className={style.timeAposta}>
                                             <img src={aposta.imagemTimeFora} alt="" />
@@ -132,9 +138,9 @@ export default function Inicio() {
                                             <p>{aposta.timeCasa}</p>
                                         </div>
                                         <div className={style.meio}>
-                                            <p>Genero</p>
-                                            <p>X</p>
-                                            <p>horario</p>
+                                        <p className={style.genero}>{aposta.generoJogo}</p>
+                                            <p className={style.xis}>X</p>
+                                            <p className={style.horario}>{aposta.horarioJogo}</p>
                                         </div>
                                         <div className={style.timeAposta}>
                                             <img src={aposta.imagemTimeFora} alt="" />

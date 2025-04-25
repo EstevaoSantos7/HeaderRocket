@@ -184,7 +184,7 @@ import Washington from '../images/imagesTimes/Washington Wizards.png'
     cartaoAmareloFora: "6.00",
     cartaoVermelhoFora: "7.30",
     generoJogo: "Masculino",
-    horarioJogo: "14;00",
+    horarioJogo: "14:00",
   },
   {
     id: 8,
@@ -228,7 +228,7 @@ import Washington from '../images/imagesTimes/Washington Wizards.png'
     cartaoAmareloFora: "6.00",
     cartaoVermelhoFora: "7.35",
     generoJogo: "Masculino",
-    horarioJogo: "21;00",
+    horarioJogo: "21:00",
   },
   {
     id: 10,
@@ -405,7 +405,7 @@ import Washington from '../images/imagesTimes/Washington Wizards.png'
     cartaoAmareloFora: "6.10",
     cartaoVermelhoFora: "7.45",
     generoJogo: "Masculino",
-    horarioJogo: "14;45",
+    horarioJogo: "14:45",
   },
   {
     id: 18,

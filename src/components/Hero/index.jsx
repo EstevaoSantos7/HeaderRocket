@@ -31,6 +31,11 @@ export default function Hero() {
                     Munique a história é diferente ” Mostran-
                     do que o jogo será Épico</p>
                 <div className={style.parteBaixa}>
+                    
+
+                    <button className={style.botaoInfo}>
+                        Apostar
+                    </button>
                     <div className={style.prazo}>
                         <p>
                             Apostas abertas até
@@ -39,10 +44,6 @@ export default function Hero() {
                             16:29
                         </p>
                     </div>
-
-                    <button className={style.botaoInfo}>
-                        Apostar
-                    </button>
                 </div>
             </div>
         </div>
