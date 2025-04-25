@@ -349,23 +349,43 @@
 }
 
 .containerPatrocinadores {
+    padding-bottom: 50px;
+ padding-top: 30px;
     .tituloCima {
         padding-bottom: 50px;
+
         h1 {
             color: white;
             font-size: 40px;
         }
     }
 
-    .caixasPatrocinio {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .gridPatrocionios {
+        display: grid;
+        grid-template-columns: 1fr repeat(4);
 
-        .gridPatrocionios {
-            display: grid;
-            grid-template-columns: 1fr repeat(4);
+        .caixasPatrocinio {
 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+
+            .caixaPatrocinio{
+                background-color:#1D2836;
+                border-radius: 20px;
+                padding: 10px;
+                height: 100%;
+                width: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            transition: all 0.5s;
+                &:hover{
+                transform: scale(1.06);
+            }
+            }
         }
     }
 }

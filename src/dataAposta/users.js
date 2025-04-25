@@ -1,37 +1,37 @@
-import Bayern from '../imagens/imagensTimes/bayern munich.png'
-import Inter from '../imagens/imagensTimes/inter de milão.png'
-import Barcelona from '../imagens/imagensTimes/Barcelona FC.png'
-import Benfica from '../imagens/imagensTimes/Benfica.png'
-import Liverpool from '../imagens/imagensTimes/Liverpool FC.png'
-import Juventus from '../imagens/imagensTimes/Juventus.png'
-import Arsenal from '../imagens/imagensTimes/Arsenal.png'
-import United from '../imagens/imagensTimes/United.png'
-import Psg from '../imagens/imagensTimes/PSG.png'
-import Tottenham from '../imagens/imagensTimes/Tottenham.png'
-import WestHam from '../imagens/imagensTimes/West Ham.png'
-import RealMadrid from '../imagens/imagensTimes/Real Madrid.png'
-import Porto from '../imagens/imagensTimes/Porto.png'
-import Sporting from '../imagens/imagensTimes/Sporting PT.png'
-import Borussia from '../imagens/imagensTimes/Borussia.png'
-import Miami from '../imagens/imagensTimes/Miami Heat.png'
-import Lakers from '../imagens/imagensTimes/Lakers.png'
-import Toronto from '../imagens/imagensTimes/Toronto Raptors.png'
-import Boston from '../imagens/imagensTimes/Boston Celtic.png'
-import Chicago from '../imagens/imagensTimes/Chicago Bulls.png'
-import Phx from '../imagens/imagensTimes/PHX.png'
-import Orlando from '../imagens/imagensTimes/Orlando magic.png'
-import Atlanta from '../imagens/imagensTimes/Atlanta Hawks.png'
-import Memphis from '../imagens/imagensTimes/.Memphis Grizzlies.png'
-import Houston from '../imagens/imagensTimes/.Houston Rockets.png'
-import Kings from '../imagens/imagensTimes/.Kings.png'
-import Washington from '../imagens/imagensTimes/Washington Wizards.png'
+import Bayern from '../images/imagesTimes/bayern munich.png'
+import Inter from '../images/imagesTimes/inter de milão.png'
+import Barcelona from '../images/imagesTimes/Barcelona FC.png'
+import Benfica from '../images/imagesTimes/Benfica.png'
+import Liverpool from '../images/imagesTimes/Liverpool FC.png'
+import Juventus from '../images/imagesTimes/Juventus.png'
+// import Arsenal from '../images/imagesTimes/Arsenal.png'
+import United from '../images/imagesTimes/Manchester United.png'
+import Psg from '../images/imagesTimes/PSG.png'
+import Tottenham from '../images/imagesTimes/Tottenham.png'
+import WestHam from '../images/imagesTimes/West Ham.png'
+import RealMadrid from '../images/realmadrid (1).png'
+import Porto from '../images/imagesTimes/Porto FC.png'
+import Sporting from '../images/imagesTimes/Sporting PT.png'
+import Borussia from '../images/imagesTimes/Borussia.png'
+import Miami from '../images/imagesTimes/Miami Heat.png'
+import Lakers from '../images/imagesTimes/Lakers.png'
+import Toronto from '../images/imagesTimes/Toronto Raptors.png'
+import Boston from '../images/imagesTimes/Boston Celtic.png'
+import Chicago from '../images/imagesTimes/Chicago Bulls.png'
+import Phx from '../images/imagesTimes/PHX.png'
+import Orlando from '../images/imagesTimes/Orlando magic.png'
+import Atlanta from '../images/imagesTimes/Atlanta Hawks.png'
+import Memphis from '../images/imagesTimes/Memphis Grizzlies.png'
+import Houston from '../images/imagesTimes/Houston Rockets.png'
+import Kings from '../images/imagesTimes/Kings.png'
+import Washington from '../images/imagesTimes/Washington Wizards.png'
 
 
 
 
 
 
-const apostas = [
+ const apostas = [
   {
     id: 1,
     timeCasa: "Bayern Munique",
@@ -101,9 +101,9 @@ const apostas = [
   {
     id: 4,
     timeCasa: "Borussia",
-    timeFora: "Arsenal",
+    timeFora: "Real Madrid",
     imagemTimeCasa: Borussia,
-    imagemTimeFora: Arsenal,
+    imagemTimeFora: RealMadrid,
     resultadoCasa: "5.6",
     resultadoEmpate: "3.7",
     resultadoFora: "6.2",
@@ -431,3 +431,4 @@ const apostas = [
   },
 
 ];
+export default apostas;

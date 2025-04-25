@@ -8,12 +8,26 @@ import { BsArrowRightSquare, BsArrowLeftSquare } from "react-icons/bs";
 import { MdOutlineArrowCircleRight, MdOutlineArrowCircleLeft } from "react-icons/md";
 import Champions from '../../images/ChampionsLeague.png'
 import Libertadores from '../../images/Conmebol_Libertadores_logo.svg 1.png'
-import Slots from '../../images/slots/image 13.png'
+
 import Europa from '../../images/patrocinios/europa.png'
-import Gordon from '../../images/patrocinios/gordon.png'
+import Gordon from '../../images/patrocinios/gordons.png'
 import America from '../../images/patrocinios/copa-america.png'
 import Conference from '../../images/patrocinios/conference.png'
+import Carrosel4 from '../Carrosel4'
 
+import SpaceMan from '../../images/slots/space.png'
+import blackjack from '../../images/slots/blackjack.png'
+import bigbass from '../../images/slots/bigbass.png'
+import oeste from '../../images/slots/velhoOste.png'
+import Aviator from '../../images/slots/aviao.png'
+
+const slots = [
+        { src: SpaceMan },
+        { src: blackjack },
+        { src: bigbass },
+        { src: oeste },
+        { src: Aviator },
+    ];
 
 export default function Inicio() {
     return (
@@ -145,43 +159,14 @@ export default function Inicio() {
                         ))}
                     </div>
                 </div>
-                <div className={style.containerSlots}>
-                    <div className={style.tituloCima}>
-                        <h1>Populares</h1>
-                        <div className={style.seta}>
-                            <button>
-                                <MdOutlineArrowCircleLeft size={40} color='white' />
-                                <MdOutlineArrowCircleRight size={40} color='white' />
-                            </button>
-                        </div>
-                    </div>
-                    <div className={style.carroselSlots}>
-                        <div className={style.slots}>
-                            <img src={Slots} alt="" />
-                        </div>
-                        <div className={style.slots}>
-                            <img src={Slots} alt="" />
-                        </div>
-                        <div className={style.slots}>
-                            <img src={Slots} alt="" />
-                        </div>
-                        <div className={style.slots}>
-                            <img src={Slots} alt="" />
-                        </div>
-                        <div className={style.slots}>
-                            <img src={Slots} alt="" />
-                        </div>
-                        <div className={style.slots}>
-                            <img src={Slots} alt="" />
-                        </div>
-                    </div>
-                </div>
+               
+                    <Carrosel4 videos={slots}/>
                 <div className={style.containerPatrocinadores}>
                     <div className={style.tituloCima}>
                         <h1>Patrocinadores</h1>
                     </div>
-                    <div className={style.caixasPatrocinio}>
-                        <div className={style.gridPatrocionios}>
+                    <div className={style.gridPatrocionios}>
+                        <div className={style.caixasPatrocinio}>
                             <div className={style.caixaPatrocinio}>
                                 <img src={Europa} alt="" />
                             </div>

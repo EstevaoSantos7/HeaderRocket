@@ -1,54 +1,102 @@
-
-
-.secaoCarrossel{
-  background-color: #e5eef5;
+.secaoCarrossel {
+    background: transparent;
     display: flex;
     flex-direction: column;
     text-align: center;
-    
-    .tituloSerie{
-        padding: 15px;
+    justify-content: center;
+
+    .tituloCima {
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            color: white;
+            font-size: 40px;
+        }
+
+        .seta {
+            border-radius: 30px;
+            border: solid 1px white;
+            padding: 8px;
+            max-width: 150px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
+            .btnmover {
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                transition: all 0.5s;
+                color: white;
+
+                svg {
+                    transition: color 0.5s ease;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    color: #197EFF;
+                }
+            }
+        }
     }
 }
-.carrossel{
-   
+
+.carrossel {
+
     display: flex;
     flex-direction: row;
     gap: 35px;
     justify-content: space-between;
-    .btnmover{
-        border: 0;
-        background: transparent;
-        cursor: pointer;
-    }
+    flex: 1;
+    background: transparent;
+
+
+
 }
-.carrosselItens{
-    background-color: #fff;
+
+.carrosselItens {
+    background: transparent;
     padding: 15px;
     border-radius: 15px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 35px;
+    grid-template-columns: repeat(5, 1fr);
+    transition: transform 0.5s ease; /* Adiciona a transição */
+    gap: 10px;
     flex: 1;
     margin: 12px;
+    width: 100%;
+
 }
-.item{
+
+.item {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    img{
-        width: 100%;
-        height: 360px;
-        object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background: transparent;
+    transition: all 0.5s;
+
+    &:hover {
+        transform: translateY(-8px);
     }
-    .informacaoCarrosel{
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .informacaoCarrosel {
         padding: 8px;
     }
 
 }
 
+  
