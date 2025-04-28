@@ -4,6 +4,7 @@
     background-color: #212C3A;
     align-items: center;
     padding: 25px;
+    
 
     .conteudo {
         display: flex;
@@ -95,8 +96,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
+    display: flex;
+   justify-content: center;
+  
 
     .caixaCampeonato {
+        
         background: #2B3B4F;
         border-radius: 10px;
         border: 1px solid rgb(193, 193, 193);
@@ -107,16 +112,23 @@
         padding: 15px;
 
         .conteudoCampeonato {
+            flex-wrap: wrap;
             display: flex;
             flex-direction: column;
             gap: 25px;
             max-width: 400px;
             width: 100%;
+            color: white;
 
-            h1,
-            p {
-                color: white;
+            .tituloCampeonato{
+                height: 96px;
+                display: flex;
+                align-items: center;
             }
+            .descCampeonato {
+                height: 60px;
+            }
+
 
             .botaoApostar {
                 padding: 6px;
@@ -130,6 +142,7 @@
                 cursor: pointer;
                 border: 0;
                 transition: 0.5s;
+                font-family: "Poppins", sans-serif;
 
                 &:hover {
                     transform: scale(1.07);
@@ -170,14 +183,20 @@
             align-items: center;
             border: 0;
             cursor: pointer;
+            transition: all 0.5s;
         }
 
         &:hover {
+            transition:all 0.5s;
             transform: scale(1.1);
         }
     }
 }
-
+.containerApostas{
+   display: flex;
+   flex-direction: column;
+   
+}
 .timesAposta {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -25,15 +25,15 @@ import RipCity from '../../images/slots/ripCity.png'
 import Dice from '../../images/slots/dice.png'
 
 const slots = [
-        { src: SpaceMan },
-        { src: blackjack },
-        { src: bigbass },
-        { src: oeste },
-        { src: Aviator },
-        { src: Dice },
-        { src: Zeus },
-        { src: RipCity },
-    ];
+    { src: SpaceMan },
+    { src: blackjack },
+    { src: bigbass },
+    { src: oeste },
+    { src: Aviator },
+    { src: Dice },
+    { src: Zeus },
+    { src: RipCity },
+];
 
 export default function Inicio() {
     return (
@@ -62,8 +62,8 @@ export default function Inicio() {
                 <div className={style.caixasCampeonato}>
                     <div className={style.caixaCampeonato}>
                         <div className={style.conteudoCampeonato}>
-                            <h1>Libertadores</h1>
-                            <p>"Na Libertadores, a bola queimar e a aposta ferve
+                            <h1  className={style.tituloCampeonato}>Libertadores</h1>
+                            <p className={style.descCampeonato}>"Na Libertadores, a bola queimar e a aposta ferve
                                 aqui, quem arrisca vibra como campeão."</p>
                             <button className={style.botaoApostar}>
                                 Apostar
@@ -75,8 +75,8 @@ export default function Inicio() {
                     </div>
                     <div className={style.caixaCampeonato}>
                         <div className={style.conteudoCampeonato}>
-                            <h1>Champions League</h1>
-                            <p>"Na Champions, cada lance vale um título
+                            <h1 className={style.tituloCampeonato}>Champions League</h1>
+                            <p className={style.descCampeonato}>"Na Champions, cada lance vale um título
                                 — e cada aposta pode virar uma lenda."</p>
                             <button className={style.botaoApostar}>
                                 Apostar
@@ -89,7 +89,7 @@ export default function Inicio() {
                 </div>
                 <div className={style.containerApostas}> {/* Aposta times */}
                     <div className={style.tituloBar}>
-                        <h1>Principais Apostas</h1>
+                        <h1 className={style.tituloCampeonato}>Principais Apostas</h1>
                         <div className={style.verMaisBotao}>
                             <button>
                                 Ver Mais
@@ -138,7 +138,7 @@ export default function Inicio() {
                                             <p>{aposta.timeCasa}</p>
                                         </div>
                                         <div className={style.meio}>
-                                        <p className={style.genero}>{aposta.generoJogo}</p>
+                                            <p className={style.genero}>{aposta.generoJogo}</p>
                                             <p className={style.xis}>X</p>
                                             <p className={style.horario}>{aposta.horarioJogo}</p>
                                         </div>
@@ -165,8 +165,8 @@ export default function Inicio() {
                         ))}
                     </div>
                 </div>
-               
-                    <Carrosel4 videos={slots}/>
+
+                <Carrosel4 videos={slots} />
                 <div className={style.containerPatrocinadores}>
                     <div className={style.tituloCima}>
                         <h1>Patrocinadores</h1>
