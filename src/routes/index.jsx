@@ -5,6 +5,7 @@ import Termos from '../pages/Termos'
 import Lobby from "../pages/Lobby";
 import CassinoAoVivo from "../pages/CassinoVivo";
 import Central from "../pages/Central";
+import Perfil from "../pages/PerfilUser"
 
 
 
@@ -18,6 +19,7 @@ export default function RoutesApp() {
                 <Route path="/Lobby" element={<Lobby/>}/>
                 <Route path="/CassinoAoVivo" element={<CassinoAoVivo/>}/>
                 <Route path="/central" element={<Central/>}/>
+                <Route path="/perfil" element={<Perfil/>}/>
 
             </Routes>
         </BrowserRouter >

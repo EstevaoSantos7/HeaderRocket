@@ -53,7 +53,7 @@ export default function Sidebar({ open }) {
                             </a>
                             <a className={style.bloco}>
                                 <FiUser size={25} color='white' />
-                                <a href="/">Conta</a>
+                                <a href="/perfil">Conta</a>
 
                             </a>
 
@@ -152,7 +152,7 @@ export default function Sidebar({ open }) {
                                     <PiMedalDuotone size={25} color='white' />
 
                                 </a>
-                                <a href='/' className={style.caixa}>
+                                <a href='/perfil' className={style.caixa}>
                                     <FiUser size={25} color='white' />
 
                                 </a>

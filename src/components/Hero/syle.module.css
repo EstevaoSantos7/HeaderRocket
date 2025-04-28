@@ -1,9 +1,10 @@
 .containerHero {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     background-color: #080c1c;
-border-radius: 12px;
+    border-radius: 12px;
+    overflow: hidden;
 
     video {
         position: absolute;
@@ -16,110 +17,124 @@ border-radius: 12px;
         border-radius: 12px;
     }
 
-
     .conteudo {
-        border-radius: 12px;
         position: absolute;
         z-index: 2;
-        width: 100%;
+        width: 97%;
         height: 100%;
         top: 0;
         right: 0;
-        padding: 50px;
         color: white;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: center; /* Centraliza o conteúdo verticalmente */
+        align-items: flex-start; /* Alinha à esquerda */
+        padding: 30px;
+        gap: 15px;
+        border-radius: 12px;
+
         background: linear-gradient(to right,
-                rgba(0, 0, 0, 1) 40%,
-                rgba(0, 0, 0, 0.8) 50%,
-                rgba(0, 0, 0, 0) 100%);
+            rgba(0, 0, 0, 1) 40%,
+            rgba(0, 0, 0, 0.8) 50%,
+            rgba(0, 0, 0, 0) 100%);
 
-        .infoJogo {
-            font-size: 24px;
+        h1 {
+            font-size: 45px;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.2;
         }
-    }
 
-    h2 {
-        
-        font-size: 14px;
-        font-weight: 700;
-    }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.4;
+        }
 
-    h1 {
-        
-        font-size: 45px;
-        font-weight: 700;
-    }
-
-    p {
-
-        font-size: 16px;
-        max-width: 450px;
-    }
-
-    .infoMeta {
-        display: flex;
-        gap: 16px;
-        margin-bottom: 16px;
-        flex-direction: column;
-
-        .times {
+        .infoMeta {
             display: flex;
-            flex-direction: row;
-            align-items: center;
-.odd{
-    padding:10px 15px;
-}
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            .infoJogo {
+                font-size: 24px;
+                margin: 0;
+            }
+
+            .times {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+
+                .odd {
+                    padding: 10px 15px;
+                }
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    object-fit: contain;
+                }
+
+                .xis {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
         }
-    }
-}
-
-.botoes {
-    display: flex;
-    gap: 16px;
-
-}
-
-.parteBaixa {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 400px;
-
-    .prazo {
-        display: flex;
-        flex-direction: column;
 
         p {
-            font-size: 20px;
+            font-size: 16px;
+            max-width: 450px;
+            margin: 0;
+            line-height: 1.5;
         }
 
-        .prazoHorario {
-            font-size: 20px;
+        .parteBaixa {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 400px;
+            align-items: center;
+            gap: 55px;
+
+            .prazo {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    font-size: 20px;
+                    margin: 0;
+                }
+
+                .prazoHorario {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .botaoInfo {
             font-weight: 500;
+            font-size: 25px;
+            padding: 14px 20px;
+            border-radius: 10px;
+            border: 0;
+            align-items: center;
+            color: #fff;
+            background-color: #197EFF;
+            transition: 0.5s;
+            cursor: pointer;
+            display: flex;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
-    }
-}
-
-.botaoInfo {
-    display: flex;
-    font-weight: 500;
-    font-size: 25px;
-    border: 1px solid black;
-    padding: 14px;
-    border-radius: 10px;
-    border: 0;
-    align-items: center;
-    color: #ffff;
-    background-color: #197EFF;
-    height: 80%;
-    transition: 0.5s;
-    cursor: pointer;
-
-    &:hover {
-        transition: 0.5s;
-        transform: scale(1.1);
     }
 }

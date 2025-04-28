@@ -5,6 +5,7 @@
     align-items: center;
     padding: 25px;
     gap: 20px;
+   
 
     .gridFiltro {
         grid-template-columns: 1fr repeat(5, 1fr);
@@ -136,6 +137,7 @@
 
         p {
             color: white;
+            margin: 0;
         }
 
         .genero {

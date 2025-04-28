@@ -24,12 +24,17 @@
             width: 100%;
 
             .imagensCamp {
+                max-width: 350px;
+                width: 100%;
+
                 img {
                     padding-bottom: 5px;
                     max-height: 400px;
                     margin-left: 10px;
                     border-radius: 10px;
-
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
                 }
             }
 
@@ -46,14 +51,11 @@
                     flex-direction: row;
                     align-items: center;
 
-
                     h2 {
                         margin-top: 15px;
                         color: white;
                         font-size: 40px;
                     }
-
-
                 }
 
                 h3 {
@@ -66,7 +68,7 @@
                 .botaoCadastrar {
                     width: 50%;
                     padding: 15px;
-                    color: #ffff;
+                    color: #fff;
                     font-size: 25px;
                     border-radius: 12px;
                     font-weight: 600;
@@ -76,7 +78,6 @@
                     background-color: #197EFF;
 
                     &:hover {
-                        transition: 0.5s;
                         transform: scale(1.04);
                         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
                             rgba(0, 0, 0, 0.12) 0px -12px 30px,
@@ -86,25 +87,13 @@
                     }
                 }
             }
-
-            .imagensCamp {
-                max-width: 350px;
-                width: 100%;
-
-                img {
-                    width: 100%;
-                    height: auto;
-                    object-fit: contain;
-                }
-            }
         }
     }
 }
 
-
 .caixasCampeonato {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 
     .caixaCampeonato {
@@ -124,10 +113,7 @@
             max-width: 400px;
             width: 100%;
 
-            h1 {
-                color: white;
-            }
-
+            h1,
             p {
                 color: white;
             }
@@ -142,35 +128,24 @@
                 font-size: 25px;
                 font-weight: 600;
                 cursor: pointer;
-                transition: 0.5s;
                 border: 0;
+                transition: 0.5s;
 
                 &:hover {
-                    transition: 0.5s;
                     transform: scale(1.07);
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-
                 }
             }
-
-
         }
 
         .imagemCampeonato {
-
             img {
-
                 object-fit: cover;
                 width: 230px;
                 border-radius: 10px;
-
             }
         }
     }
-
-
-
-
 }
 
 .tituloBar {
@@ -185,8 +160,6 @@
     }
 
     .verMaisBotao {
-        transition: 0.5s;
-
         button {
             padding: 6px 40px;
             border-radius: 11px;
@@ -197,21 +170,17 @@
             align-items: center;
             border: 0;
             cursor: pointer;
-
         }
 
-
         &:hover {
-            transition: 0.5s;
             transform: scale(1.1);
-
         }
     }
 }
 
 .timesAposta {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     padding: 20px;
 }
@@ -226,20 +195,16 @@
     border-radius: 32px;
 
     .time {
-
-        padding: 10px 20px 0px 20px;
-        justify-content: center;
+        padding: 10px 20px 0 20px;
         display: flex;
-        flex-direction: row;
+        justify-content: center;
         align-items: center;
         gap: 35px;
-        width: 100%;
 
         .timeAposta {
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
+            align-items: center;
 
             p {
                 color: white;
@@ -248,22 +213,19 @@
             img {
                 width: 60px;
                 height: 60px;
-
             }
-
         }
-
     }
 
     .meio {
         display: flex;
-        justify-content: center;
         flex-direction: column;
         align-items: center;
         gap: 8px;
 
         p {
             color: white;
+            margin: 0;
         }
 
         .genero {
@@ -280,7 +242,6 @@
             font-size: 25px;
             font-weight: 500;
         }
-
     }
 
     hr {
@@ -291,76 +252,52 @@
 
     .odds {
         display: flex;
-        flex-direction: row;
         justify-content: space-evenly;
         padding-top: 10px;
 
-        .vitoria {
+        .vitoria,
+        .empate,
+        .derrota {
             padding: 10px 15px;
-            background-color: #15DF6D;
             border-radius: 40px;
             max-width: 150px;
             width: 100%;
             text-align: center;
-            align-items: center;
-            transition: all 0.5s;
             cursor: pointer;
-
-            &:hover {
-                transform: scale(1.02);
-                background-color: #00ff6e;
-            }
+            transition: all 0.5s;
 
             span {
                 color: white;
                 font-size: 25px;
-                font-weight: 700
+                font-weight: 700;
+            }
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+
+        .vitoria {
+            background-color: #15DF6D;
+
+            &:hover {
+                background-color: #00ff6e;
             }
         }
 
         .empate {
-            padding: 10px 15px;
             background-color: #406493;
-            border-radius: 40px;
-            max-width: 150px;
-            width: 100%;
-            text-align: center;
-            align-items: center;
-            transition: all 0.5s;
-            cursor: pointer;
 
             &:hover {
-                transform: scale(1.02);
                 background-color: #1e66c5;
-            }
-
-            span {
-                color: white;
-                font-size: 25px;
-                font-weight: 700
             }
         }
 
         .derrota {
-            padding: 10px 15px;
             background-color: #E11D20;
-            border-radius: 40px;
-            max-width: 150px;
-            width: 100%;
-            text-align: center;
-            align-items: center;
-            transition: all 0.5s;
-            cursor: pointer;
 
             &:hover {
-                transform: scale(1.02);
                 background-color: #ff0004;
-            }
-
-            span {
-                color: white;
-                font-size: 25px;
-                font-weight: 700
             }
         }
     }
@@ -369,7 +306,6 @@
 .containerSlots {
     .tituloCima {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         padding-bottom: 50px;
 
@@ -387,7 +323,6 @@
                 gap: 10px;
                 padding: 10px;
             }
-
         }
     }
 
@@ -399,15 +334,13 @@
         .slots {
             flex-wrap: wrap;
             display: grid;
-            grid-template-columns: 1fr(repeat(5));
-
+            grid-template-columns: repeat(5, 1fr);
         }
     }
 }
 
 .containerPatrocinadores {
-    padding-bottom: 50px;
-    padding-top: 30px;
+    padding: 30px 0 50px 0;
 
     .tituloCima {
         padding-bottom: 50px;
@@ -420,10 +353,9 @@
 
     .gridPatrocionios {
         display: grid;
-        grid-template-columns: 1fr repeat(4);
+        grid-template-columns: repeat(4, 1fr);
 
         .caixasPatrocinio {
-
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -433,7 +365,6 @@
                 background-color: #1D2836;
                 border-radius: 20px;
                 padding: 10px;
-                height: 100%;
                 width: 200px;
                 display: flex;
                 justify-content: center;
