@@ -2,44 +2,17 @@
     display: flex;
     padding: 20px;
     gap: 40px;
-
+    background-color: #212C3A;
     color: white;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
 }
 
-/* Painel esquerdo - dados do usuário */
-.leftPanel {
-    flex: 1;
-    background-color: #1D2836;
-    padding: 20px;
-    border-radius: 10px;
+.containerConteudo {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
-
-.leftPanel h2 {
-    margin-bottom: 20px;
-
-}
-
-.leftPanel p {
-    margin: 10px 0;
-}
-
-.edit-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: rgb(255, 255, 255);
-    color: #1b4986;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-
-}
-
-.editButton:hover {
-    background-color: #ffffff;
-}
-
-
-
 
 .images {
     display: flex;
@@ -57,6 +30,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 15px;
+
+    .infoTitulo {
+        color: white;
+        font-size: 25px;
+    }
+
 }
 
 .dados {
@@ -70,13 +50,19 @@
     border-radius: 21px;
 
     button {
+        font-size: 20px;
         padding: 10px 20px;
-        background-color: #ffffff;
-        color: #197EFF;
+        background-color: #dfdfdf;
+        color: #398fff;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition:all 0.3s;
+        font-family: "Poppins", sans-serif;
+        &:hover{
+            transform: scale(1.01);
+            background-color: #ffff;
+        }
     }
 
 }
@@ -105,10 +91,12 @@
                 width: 100px;
                 object-fit: cover;
             }
-            .containerEsporteAposta{
+
+            .containerEsporteAposta {
                 gap: 5px;
                 display: flex;
                 flex-direction: column;
+
                 .apostaEsporte {
                     display: flex;
                     gap: 12px;
@@ -119,14 +107,14 @@
                     height: 100%;
                     padding: 4px;
                     border-radius: 25px;
-    
+
                     .imagemTime {
                         img {
                             width: 50px;
                             object-fit: cover;
                         }
                     }
-    
+
                     .xis {
                         font-size: 45px;
                         font-weight: 600;
@@ -134,7 +122,7 @@
                 }
             }
 
-            
+
         }
     }
 }
@@ -147,15 +135,26 @@
     display: flex;
     justify-content: flex-end;
     padding: 10px 20px;
+    max-width: 1220px;
+    width: 100%;
 
-    .saldoButton {
-        padding: 10px 20px;
-        background-color: #50759c;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
+    .caixaSaldo {
+display: flex;
+flex-direction: column;
+align-items: center;
+        .saldoButton {
+            font-family: "Poppins", sans-serif;
+            padding: 10px 20px;
+            background-color: #50759c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+           &:hover{
+            transform: scale(1.01);
+           }
+        }
     }
 }
 
@@ -165,6 +164,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #212C3A;
+
     /* azul escuro */
 }

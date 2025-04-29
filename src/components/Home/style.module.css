@@ -197,6 +197,7 @@
    flex-direction: column;
    
 }
+
 .timesAposta {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -372,7 +373,7 @@
 
     .gridPatrocionios {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        
 
         .caixasPatrocinio {
             display: flex;
@@ -381,6 +382,7 @@
             flex-direction: row;
 
             .caixaPatrocinio {
+                height: 155px;
                 background-color: #1D2836;
                 border-radius: 20px;
                 padding: 10px;
@@ -388,11 +390,12 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+             
                 transition: all 0.5s;
 
                 &:hover {
                     transform: scale(1.06);
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
                 }
             }
         }

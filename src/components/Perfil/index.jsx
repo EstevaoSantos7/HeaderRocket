@@ -13,14 +13,15 @@ export default function Perfil() {
         <>
 
             <div className={style.container}>
-                {/* Esquerda - Dados do usuário */}
+                <div className={style.containerConteudo}>
+                    {/* Esquerda - Dados do usuário */}
                 <div className={style.dados}>
                     <img src={Mines5} alt="images" />
                     <h2>Nome do Usuário</h2>
                     <h3>#6969</h3>
                     <div className={style.dadosInfo}>
 
-                        <p><strong>Informações Pessoais</strong> </p>
+                        <h4 className={style.infoTitulo}>Informações Pessoais</h4>
                         <p><strong>Telefone:</strong> (11) 91234-5678</p>
                         <p><strong>Email:</strong> joao@email.com</p>
                         <p><strong>Senha:</strong> ********</p>
@@ -46,39 +47,44 @@ export default function Perfil() {
                             <img src={Mines1} alt="Jogo 1" />
                             <img src={Mines2} alt="Jogo 2" />
                             <img src={Mines3} alt="Jogo 3" />
-                          <div className={style.containerEsporteAposta}>
-                          <div className={style.apostaEsporte}>
-                                <div className={style.imagemTime}>
-                                    <img src={Barcelona} alt="" />
+                            <div className={style.containerEsporteAposta}>
+                                <div className={style.apostaEsporte}>
+                                    <div className={style.imagemTime}>
+                                        <img src={Barcelona} alt="" />
+                                    </div>
+                                    <div className={style.xis}>
+                                        <span>X</span>
+                                    </div>
+                                    <div className={style.imagemTime}>
+                                        <img src={Arsenal} alt="" />
+                                    </div>
                                 </div>
-                                <div className={style.xis}>
-                                    <span>X</span>
-                                </div>
-                                <div className={style.imagemTime}>
-                                    <img src={Arsenal} alt="" />
+                                <div className={style.apostaEsporte}>
+                                    <div className={style.imagemTime}>
+                                        <img src={Barcelona} alt="" />
+                                    </div>
+                                    <div className={style.xis}>
+                                        <span>X</span>
+                                    </div>
+                                    <div className={style.imagemTime}>
+                                        <img src={Arsenal} alt="" />
+                                    </div>
                                 </div>
                             </div>
-                            <div className={style.apostaEsporte}>
-                                <div className={style.imagemTime}>
-                                    <img src={Barcelona} alt="" />
-                                </div>
-                                <div className={style.xis}>
-                                    <span>X</span>
-                                </div>
-                                <div className={style.imagemTime}>
-                                    <img src={Arsenal} alt="" />
-                                </div>
-                            </div>
-                          </div>
                         </div>
                     </div>
 
                 </div>
-            </div>
 
-            <div className={style.saldoContainer}>
-                <button className={style.saldoButton}>Adicionar Saldo</button>
+                </div>
 
+                <div className={style.saldoContainer}>
+                   <div className={style.caixaSaldo}>
+                   <button className={style.saldoButton}>Adicionar Saldo</button>
+                   <h2>Maior Ganho: R$515,00</h2>
+                   </div>
+
+                </div>
             </div>
         </>
 
