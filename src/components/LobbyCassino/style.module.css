@@ -35,6 +35,7 @@
             }
 
             .elemento {
+                text-decoration: none;
                 display: flex;
                 gap: 15px;
                 flex-direction: row;

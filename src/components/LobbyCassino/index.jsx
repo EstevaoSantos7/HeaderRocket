@@ -18,16 +18,12 @@ import RipCity from '../../images/slots/ripCity.png'
 import Dice from '../../images/slots/dice.png'
 import { PiSoccerBallBold, PiSoccerBallLight } from 'react-icons/pi'
 
-const slots = [
-    { src: SpaceMan },
-    { src: blackjack },
-    { src: bigbass },
-    { src: oeste },
-    { src: Good },
-    { src: Dice },
-    { src: Zeus },
-    { src: RipCity },
-];
+//consts
+import cassinoVivo from '../../dataAposta/cassinoVivo'
+import JogosVivo from '../../dataAposta/JogosVivo'
+import slots from '../../dataAposta/Slots'
+
+
 
 export default function LobbyCassino() {
     return (
@@ -39,19 +35,19 @@ export default function LobbyCassino() {
                         <MdHomeFilled size={40} color='white' />
                         <h1>Lobby</h1>
                     </a>
-                    <a className={style.elemento}>
+                    <a href='/CassinoAoVivo' className={style.elemento}>
                         <VscPerson size={40} color='white' />
                         <h1>Cassino ao Vivo </h1>
                     </a>
-                    <a className={style.elemento}>
+                    <a href='/JogosAoVivo' className={style.elemento}>
                         <GiPresent size={40} color='white' />
                         <h1>Jogos ao Vivo </h1>
                     </a>
-                    <a className={style.elemento}>
+                    <a href='/Slots' className={style.elemento}>
                         <FaFireAlt size={40} color='white' />
-                        <h1>Jogos</h1>
+                        <h1>Slots</h1>
                     </a>
-                    <a className={style.elemento}>
+                    <a href='/Esportes' className={style.elemento}>
                         < IoTrophySharp size={40} color='white' />
                         <h1>Esportes</h1>
                     </a>
@@ -154,8 +150,8 @@ export default function LobbyCassino() {
                 </div>
 
             </div>
-            <Carrosel6 titulo="Cassino ao Vivo" videos={slots} />
-            <Carrosel6 titulo="Jogos ao Vivo" videos={slots} />
+            <Carrosel6 titulo="Cassino ao Vivo" videos={cassinoVivo} />
+            <Carrosel6 titulo="Jogos ao Vivo" videos={JogosVivo} />
             <Carrosel6 titulo="Slots e Jogos" videos={slots} />
         </div>
     )

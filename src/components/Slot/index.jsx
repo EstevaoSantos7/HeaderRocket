@@ -1,5 +1,5 @@
 import style from './style.module.css'
-import cassinoVivo from '../../dataAposta/cassinoVivo'
+import Slots from '../../dataAposta/Slots'
 
 import { MdHomeFilled } from 'react-icons/md'
 import { FaFireAlt } from 'react-icons/fa'
@@ -16,7 +16,7 @@ export default function CassinoVivo() {
                             <MdHomeFilled size={40} color='white' />
                             <h1>Lobby</h1>
                         </a>
-                        <a className={style.elementoPage}>
+                        <a href='/CassinoAoVivo' className={style.elemento}>
                             <VscPerson size={40} color='white' />
                             <h1>Cassino ao Vivo </h1>
                         </a>
@@ -24,7 +24,7 @@ export default function CassinoVivo() {
                             <GiPresent size={40} color='white' />
                             <h1>Jogos ao Vivo </h1>
                         </a>
-                        <a  href='/Slots' className={style.elemento}>
+                        <a   className={style.elementoPage}>
                             <FaFireAlt size={40} color='white' />
                             <h1>Slots</h1>
                         </a>
@@ -36,13 +36,13 @@ export default function CassinoVivo() {
                 </div>
             <div className={style.caixasCassino}>
             <div className={style.tituloBox}>
-                    <GiPresent size={60} color='white' />
-                    <h1>Cassino ao Vivo</h1>
+                    <FaFireAlt size={60} color='white' />
+                    <h1>Slots</h1>
                 </div>
                 <div className={style.gridContainer}>
-                    {cassinoVivo.slice(0, 15).map(cassino => (
-                        <div className={style.caixaJogoCassino} key={cassino.id}>
-                            <img src={cassino.src} alt="" />
+                    {Slots.slice(0, 15).map(Slot => (
+                        <div className={style.caixaJogoCassino} key={Slot.id}>
+                            <img src={Slot.src} alt="" />
                         </div>
                     ))}
                 </div>

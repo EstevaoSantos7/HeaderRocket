@@ -39,7 +39,7 @@ export default function Sidebar({ open }) {
                             </a>
                             <a className={style.bloco}>
                                 <FaRegComment size={25} color='white' />
-                                <a href="/">Ajuda</a>
+                                <a href="/central">Ajuda</a>
                             </a>
                             <a className={style.bloco}>
                                 <FaRegQuestionCircle size={25} color='white' />
@@ -48,7 +48,7 @@ export default function Sidebar({ open }) {
                             </a>
                             <a className={style.bloco}>
                                 <PiMedalDuotone size={25} color='white' />
-                                <a href="/">Ranking de Slots</a>
+                                <a href="/Ranking">Ranking de Slots</a>
 
                             </a>
                             <a className={style.bloco}>
@@ -99,21 +99,28 @@ export default function Sidebar({ open }) {
 
                             <a className={style.bloco}>
                                 <GiPresent  size={25} color='white' />
-                                <a href="/">Cassino ao vivo</a>
+                                <a href="/CassinoAoVivo">Cassino ao vivo</a>
                             </a>
                         </div>
                         <a className={style.elementos}>
 
                             <a className={style.bloco}>
                                 <MdOutlineCasino size={25} color='white' />
-                                <a href="/">Salão de Jogos</a>
+                                <a href="/JogosAoVivo">Jogos ao Vivo</a>
+                            </a>
+                        </a>
+                        <a className={style.elementos}>
+
+                            <a className={style.bloco}>
+                                <MdOutlineCasino size={25} color='white' />
+                                <a href="/Slots">Slots</a>
                             </a>
                         </a>
                         <div className={style.elementos}>
 
                             <a className={style.bloco}>
                                 <PiSoccerBallFill size={25} color='white' />
-                                <a href="/">Esportes</a>
+                                <a href="/Esportes">Esportes</a>
                             </a>
                         </div>
 
@@ -140,7 +147,7 @@ export default function Sidebar({ open }) {
                                     <CiCreditCard1 size={25} color='white' />
 
                                 </a>
-                                <a href='/' className={style.caixa}>
+                                <a href='/central' className={style.caixa}>
                                     <FaRegComment size={25} color='white' />
 
                                 </a>
@@ -148,7 +155,7 @@ export default function Sidebar({ open }) {
                                     <FaRegQuestionCircle size={25} color='white' />
 
                                 </a>
-                                <a href='/' className={style.caixa}>
+                                <a href='/Ranking' className={style.caixa}>
                                     <PiMedalDuotone size={25} color='white' />
 
                                 </a>
@@ -191,18 +198,22 @@ export default function Sidebar({ open }) {
                         <div className={style.elementosFinal}>
                             <div className={style.icones}>
                                 <a href='/lobby' className={style.caixa}>
-                                    <GiPresent size={25} color='white' />
+                                    < RiPokerSpadesFill size={25} color='white' />
 
                                 </a>
-                                <a href='/' className={style.caixa}>
-                                    <RiPokerSpadesFill size={25} color='white' />
+                                <a href='/CassinoAoVivo' className={style.caixa}>
+                                    < GiPresent size={25} color='white' />
 
                                 </a>
-                                <a href='/' className={style.caixa}>
+                                <a href='/JogosAoVivo' className={style.caixa}>
                                     <MdOutlineCasino size={25} color='white' />
 
                                 </a>
-                                <a href='/' className={style.caixa}>
+                                <a href='/Slots' className={style.caixa}>
+                                    <MdOutlineCasino size={25} color='white' />
+
+                                </a>
+                                <a href='/Esportes' className={style.caixa}>
                                     <PiSoccerBallFill size={25} color='white' />
 
                                 </a>
