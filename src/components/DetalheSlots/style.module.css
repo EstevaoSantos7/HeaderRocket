@@ -1,0 +1,42 @@
+.containerDetalhes {
+    background-color: #212C3A;
+    padding: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .imagemJogo {
+        width: 20%;
+
+        .capaJogo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .conteudoDetalhes {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        width: 80%;
+
+        .textoOne {
+
+            display: flex;
+            flex-direction: column;
+
+            .nameSlot {
+                color: white;
+                font-size: 35px;
+                padding: 20px 0;
+            }
+        }
+
+        p {
+            color: white;
+        }
+    }
+}

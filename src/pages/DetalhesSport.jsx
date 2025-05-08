@@ -1,23 +1,24 @@
 import { useState } from "react";
 import Header from "../components/Header";
 import Sidebar from '../components/Sidebar'
-import style from '../styles/central.module.css'
+import style from '../styles/detalhesSport.module.css'
 import Rodape from "../components/Rodape";
-import CentralComp from "../components/CentralDeAjuda";
+
+import DetalheSport from "../components/DetalheSport";
 
 
 
-function CentralAjuda() {
+function DetalhesSport() {
     const [open, setOpen] = useState(false);
 
     return (
         <>
             <div className={style.containerTudo}>
                 <Header open={open} setOpen={setOpen} />
-                <div className={style.containerCentral}>
+                <div className={style.containerDetalhes}>
                     <Sidebar open={open} />
-                    <div className={style.conteudoCentral}>
-                        <CentralComp/>
+                    <div className={style.conteudoDetalhes}>
+                        <DetalheSport/>
                         <Rodape/>
                     </div>
                 </div>
@@ -26,4 +27,4 @@ function CentralAjuda() {
     );
 }
 
-export default CentralAjuda;
+export default DetalhesSport;

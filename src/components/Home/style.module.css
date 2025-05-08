@@ -195,15 +195,16 @@
 .containerApostas{
    display: flex;
    flex-direction: column;
-   
-}
-
-.timesAposta {
+   .caixa{
+  
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     padding: 20px;
+   }
 }
+
+
 
 .caixaFut {
     max-width: 550px;
@@ -213,8 +214,10 @@
     flex-direction: column;
     padding: 20px;
     border-radius: 32px;
+    text-decoration: none   ;
 
     .time {
+        text-align: center;
         padding: 10px 20px 0 20px;
         display: flex;
         justify-content: center;
@@ -268,6 +271,7 @@
         width: 100%;
         height: 3px;
         background-color: #dddddd;
+       border: none;
     }
 
     .odds {

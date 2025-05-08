@@ -9,6 +9,9 @@ import Perfil from "../pages/PerfilUser"
 import JogosAoVivo from "../pages/JogosVivo"
 import Esportes from "../pages/Esporte"
 import Slots from "../pages/Slots"
+import DetalhesSport from "../pages/DetalhesSport"
+import DetalhesSlot from "../pages/DetalhesSlot"
+import Ranking from "../pages/Ranking";
 
 
 
@@ -26,6 +29,9 @@ export default function RoutesApp() {
                 <Route path="/JogosAoVivo" element={<JogosAoVivo/>}/>
                 <Route path="/Esportes" element={<Esportes/>}/>
                 <Route path="/Slots" element={<Slots/>}/>
+                <Route path="/DetalhesSport" element={<DetalhesSport/>}/>
+                <Route path="/DetalhesSlot" element={<DetalhesSlot/>}/>
+                <Route path="/Ranking" element={<Ranking/>}/>
 
             </Routes>
         </BrowserRouter >

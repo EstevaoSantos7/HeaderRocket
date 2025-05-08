@@ -6,6 +6,8 @@ import Mines4 from "../../images/image (3).png"
 import Mines5 from "../../images/user.png"
 import Barcelona from '../../images/imagesTimes/Barcelona FC.png'
 import Arsenal from '../../images/imagesTimes/Arsenal FC.png'
+import Toronto from '../../images/imagesTimes/Toronto Raptors.png'
+import Celtics from '../../images/imagesTimes/Celtics.png'
 
 
 export default function Perfil() {
@@ -48,26 +50,31 @@ export default function Perfil() {
                             <img src={Mines2} alt="Jogo 2" />
                             <img src={Mines3} alt="Jogo 3" />
                             <div className={style.containerEsporteAposta}>
+                                
                                 <div className={style.apostaEsporte}>
-                                    <div className={style.imagemTime}>
+                                    <div className={style.conteudoTime}>
                                         <img src={Barcelona} alt="" />
+                                        <span className={style.placar}>4</span>
                                     </div>
                                     <div className={style.xis}>
                                         <span>X</span>
                                     </div>
-                                    <div className={style.imagemTime}>
+                                    <div className={style.conteudoTime}>
+                                        <span className={style.placar}>0</span>
                                         <img src={Arsenal} alt="" />
                                     </div>
                                 </div>
                                 <div className={style.apostaEsporte}>
-                                    <div className={style.imagemTime}>
-                                        <img src={Barcelona} alt="" />
+                                    <div className={style.conteudoTime}>
+                                        <img src={Toronto} alt="" />
+                                        <span className={style.placar}>62</span>
                                     </div>
                                     <div className={style.xis}>
                                         <span>X</span>
                                     </div>
-                                    <div className={style.imagemTime}>
-                                        <img src={Arsenal} alt="" />
+                                    <div className={style.conteudoTime}>
+                                        <span className={style.placar}>84</span>
+                                        <img src={Celtics} alt="" />
                                     </div>
                                 </div>
                             </div>

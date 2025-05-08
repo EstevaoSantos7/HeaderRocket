@@ -68,7 +68,7 @@ export default function LobbyCassino() {
                     <div className={style.timesAposta}>
 
                         {apostas.slice(3, 7).map(aposta => (
-                            <div className={style.caixaFut} key={aposta.id}>
+                            <a href='/DetalhesSport' className={style.caixaFut} key={aposta.id}>
                                 <div className={style.time}>
                                     <div className={style.timeAposta}>
                                         <img src={aposta.imagemTimeCasa} alt="" />
@@ -96,7 +96,7 @@ export default function LobbyCassino() {
                                         <span>{aposta.resultadoFora}</span>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         ))}
 
 
@@ -112,7 +112,7 @@ export default function LobbyCassino() {
                     <div className={style.timesAposta}>
 
                         {apostas.slice(14,19).map(aposta => (
-                            <div className={style.caixaFut} key={aposta.id}>
+                            <a href='/DetalhesSport' className={style.caixaFut} key={aposta.id}>
                                 <div className={style.time}>
                                     <div className={style.timeAposta}>
                                         <img src={aposta.imagemTimeCasa} alt="" />
@@ -140,7 +140,7 @@ export default function LobbyCassino() {
                                         <span>{aposta.resultadoFora}</span>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         ))}
 
 

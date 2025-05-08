@@ -1,0 +1,63 @@
+.containerRankingSlots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+    background-color: #212C3A;
+    color: white;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+
+.titleSection {
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.conteudoRankingSlots {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    padding: 50px 0px 150px 0px;
+
+    .Slot {
+text-decoration: none;
+        transition: 0.5s ease;
+        cursor: pointer;  
+        position: relative;
+
+        &:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+
+      
+
+        .rateSlot {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+
+            svg {
+                color: #FFCA28;
+                font-size: 35px;
+            }
+        }
+
+        .position {
+            color: #fff;
+            position: absolute;
+            bottom: 3%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

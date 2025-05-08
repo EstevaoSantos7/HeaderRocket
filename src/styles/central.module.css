@@ -1,0 +1,18 @@
+.containerTudo {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.containerCentral {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 64px); /* se 64px for a altura do Header */
+    overflow: hidden;
+}
+
+.conteudoCentral {
+    flex: 1;
+    overflow-y: auto;
+     /* opcional, pra dar um respiro */
+}

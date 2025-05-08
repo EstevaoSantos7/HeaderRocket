@@ -45,8 +45,8 @@ export default function Esportes() {
                         <h1 className={style.esporteTitulo}>Futebol</h1>
                     </div>
                     <div className={style.timesAposta}>
-                        {apostas.slice(3, 7).map(aposta => (
-                            <div className={style.caixaFut} key={aposta.id}>
+                        {apostas.slice(0, 9).map(aposta => (
+                            <a href='/DetalhesSport' className={style.caixaFut} key={aposta.id}>
                                 <div className={style.time}>
                                     <div className={style.timeAposta}>
                                         <img src={aposta.imagemTimeCasa} alt="" />
@@ -74,7 +74,7 @@ export default function Esportes() {
                                         <span>{aposta.resultadoFora}</span>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         ))}
                     </div>
                 </div>
@@ -84,8 +84,8 @@ export default function Esportes() {
                         <h1 className={style.esporteTitulo}>Basquete</h1>
                     </div>
                     <div className={style.timesAposta}>
-                        {apostas.slice(12, 16).map(aposta => (
-                            <div className={style.caixaFut} key={aposta.id}>
+                        {apostas.slice(12, 18).map(aposta => (
+                            <a href='/DetalhesSport' className={style.caixaFut} key={aposta.id}>
                                 <div className={style.time}>
                                     <div className={style.timeAposta}>
                                         <img src={aposta.imagemTimeCasa} alt="" />
@@ -113,7 +113,7 @@ export default function Esportes() {
                                         <span>{aposta.resultadoFora}</span>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         ))}
                     </div>
                 </div>

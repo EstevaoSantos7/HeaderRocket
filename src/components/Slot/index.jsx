@@ -41,9 +41,9 @@ export default function CassinoVivo() {
                 </div>
                 <div className={style.gridContainer}>
                     {Slots.slice(0, 15).map(Slot => (
-                        <div className={style.caixaJogoCassino} key={Slot.id}>
+                        <a href='/' className={style.caixaJogoCassino} key={Slot.id}>
                             <img src={Slot.src} alt="" />
-                        </div>
+                        </a>
                     ))}
                 </div>
 
