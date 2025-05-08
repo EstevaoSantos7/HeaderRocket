@@ -17,7 +17,7 @@ function DetalhesSlot() {
 const {id} = useParams();
 
 const slot  = Slots.find(slot => slot.id === parseInt(id))
-const jogos = JogosConst.find(jogos => jogos.id === parseInt(id))
+
 
 
     const [open, setOpen] = useState(false);
@@ -29,8 +29,8 @@ const jogos = JogosConst.find(jogos => jogos.id === parseInt(id))
                 <div className={style.containerDetalhes}>
                     <Sidebar open={open} />
                     <div className={style.conteudoDetalhes}>
-                         <DetalheSlot slot={slot}  jogos={jogos}  /> 
-                         {/*cassino={cassino} jogoVivo={jogoVivo}*/}
+                         <DetalheSlot slot={slot}   /> 
+                        
                         <Rodape/>
                     </div>
                 </div>

@@ -17,6 +17,7 @@ const ranking = [
   {
     id: 1, // Adicionando um id único
     src: slot1,
+    href: '/detalhesslot/2',
     titulo: "Slot 1",
     nota: 4.9,
   },
