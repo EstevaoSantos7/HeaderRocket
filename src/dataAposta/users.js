@@ -56,7 +56,7 @@ import Washington from '../images/imagesTimes/Washington Wizards.png'
   },
   {
     id: 2,
-    timeCasa: "Barcelona ",
+    timeCasa: "  ",
     timeFora: "Benfica",
     imagemTimeCasa: Barcelona,
     imagemTimeFora: Benfica,

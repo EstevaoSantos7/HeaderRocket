@@ -25,6 +25,7 @@ import slots from '../../dataAposta/Slots'
 
 
 
+
 export default function LobbyCassino() {
     return (
 
@@ -61,14 +62,14 @@ export default function LobbyCassino() {
                 </div>
 
                 <div className={style.caixa}>
-                <div className={style.caixaTituloEsporte}>
-                   <PiSoccerBallLight  size={50} color='white' />
-                   <h1 className={style.esporteTitulo}>Futebol</h1>
-                   </div>
+                    <div className={style.caixaTituloEsporte}>
+                        <PiSoccerBallLight size={50} color='white' />
+                        <h1 className={style.esporteTitulo}>Futebol</h1>
+                    </div>
                     <div className={style.timesAposta}>
 
                         {apostas.slice(3, 7).map(aposta => (
-                            <a href='/DetalhesSport' className={style.caixaFut} key={aposta.id}>
+                            <a href={`/detalhesSport/${aposta.id}`} className={style.caixaFut} key={aposta.id}>
                                 <div className={style.time}>
                                     <div className={style.timeAposta}>
                                         <img src={aposta.imagemTimeCasa} alt="" />
@@ -105,14 +106,14 @@ export default function LobbyCassino() {
                     </div>
                 </div>
                 <div className={style.caixa}>
-                   <div className={style.caixaTituloEsporte}>
-                   <IoMdBasketball size={50} color='white' />
-                   <h1 className={style.esporteTitulo}>Basquete</h1>
-                   </div>
+                    <div className={style.caixaTituloEsporte}>
+                        <IoMdBasketball size={50} color='white' />
+                        <h1 className={style.esporteTitulo}>Basquete</h1>
+                    </div>
                     <div className={style.timesAposta}>
 
-                        {apostas.slice(14,19).map(aposta => (
-                            <a href='/DetalhesSport' className={style.caixaFut} key={aposta.id}>
+                        {apostas.slice(14, 19).map(aposta => (
+                            <a href={`/detalhesSport/${aposta.id}`} className={style.caixaFut} key={aposta.id}>
                                 <div className={style.time}>
                                     <div className={style.timeAposta}>
                                         <img src={aposta.imagemTimeCasa} alt="" />

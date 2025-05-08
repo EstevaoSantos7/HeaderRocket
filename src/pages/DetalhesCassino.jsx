@@ -1,19 +1,24 @@
 import { useState } from "react";
 import Header from "../components/Header";
 import Sidebar from '../components/Sidebar'
-import style from '../styles/detalhesSport.module.css'
+import style from '../styles/detalhesSlot.module.css'
 import Rodape from "../components/Rodape";
 
-import DetalheSport from "../components/DetalheSport";
-import JogosVivo from "../dataAposta/users";
+import DetalheCassino from "../components/DetalheCassino";
+
 import { useParams } from "react-router-dom";
+import Slots from "../dataAposta/Slots";
+import CassinoVivo from "../dataAposta/cassinoVivo";
+import JogosConst from "../dataAposta/JogosVivo";
 
 
 
-function DetalhesSport() {
-    const {id} = useParams();
+function DetalhesCassino() {
+const {id} = useParams();
 
-    const jogo  = JogosVivo.find(jogo => jogo.id === parseInt(id))
+const cassino  = CassinoVivo.find(cassino => cassino.id === parseInt(id))
+
+
 
     const [open, setOpen] = useState(false);
 
@@ -24,7 +29,7 @@ function DetalhesSport() {
                 <div className={style.containerDetalhes}>
                     <Sidebar open={open} />
                     <div className={style.conteudoDetalhes}>
-                        <DetalheSport  jogo ={jogo} />
+                         <DetalheCassino cassino={cassino}  /> 
                         <Rodape/>
                     </div>
                 </div>
@@ -33,4 +38,4 @@ function DetalhesSport() {
     );
 }
 
-export default DetalhesSport;
+export default DetalhesCassino;

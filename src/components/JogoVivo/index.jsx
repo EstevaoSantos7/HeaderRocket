@@ -7,7 +7,7 @@ import { IoTrophySharp } from 'react-icons/io5'
 import { GiPresent } from 'react-icons/gi'
 import { VscPerson } from 'react-icons/vsc'
 
-export default function JogoVivo() {
+export default function JogoVivo(jogo) {
     return (
         <div className={style.containerCassino}>
             <div className={style.gridFiltro}>
@@ -41,10 +41,10 @@ export default function JogoVivo() {
                     <h1>Jogos ao Vivo</h1>
                 </div>
                 <div className={style.gridContainer}>
-                    {jogosVivo.slice(0, 15).map(jogo => (
-                        <div className={style.caixaJogoCassino} key={jogo.id}>
-                            <img src={jogo.src} alt="" />
-                        </div>
+                    {jogosVivo.slice(0, 15).map(jogos => (
+                        <a href={`/DetalhesJogos/${jogos.id}`} className={style.caixaJogoCassino} key={jogos.id}>
+                            <img src={jogos.src} alt="" />
+                        </a>
                     ))}
                 </div>
 

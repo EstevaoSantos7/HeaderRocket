@@ -11,6 +11,8 @@ import Esportes from "../pages/Esporte"
 import Slots from "../pages/Slots"
 import DetalhesSport from "../pages/DetalhesSport"
 import DetalhesSlot from "../pages/DetalhesSlot"
+import DetalhesJogos from "../pages/DetlhesJogos"
+import DetalhesCassino from "../pages/DetalhesCassino"
 import Ranking from "../pages/Ranking";
 
 
@@ -29,8 +31,10 @@ export default function RoutesApp() {
                 <Route path="/JogosAoVivo" element={<JogosAoVivo/>}/>
                 <Route path="/Esportes" element={<Esportes/>}/>
                 <Route path="/Slots" element={<Slots/>}/>
-                <Route path="/DetalhesSport" element={<DetalhesSport/>}/>
-                <Route path="/DetalhesSlot" element={<DetalhesSlot/>}/>
+                <Route path="/DetalhesSport/:id" element={<DetalhesSport/>}/>
+                <Route path="/DetalhesSlot/:id" element={<DetalhesSlot/>}/>
+                <Route path="/DetalhesJogos/:id" element={<DetalhesJogos/>}/>
+                <Route path="/DetalhesCassino/:id" element={<DetalhesCassino/>}/>
                 <Route path="/Ranking" element={<Ranking/>}/>
 
             </Routes>

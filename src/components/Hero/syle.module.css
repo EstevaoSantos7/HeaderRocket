@@ -27,16 +27,18 @@
         color: white;
         display: flex;
         flex-direction: column;
-        justify-content: center; /* Centraliza o conteúdo verticalmente */
-        align-items: flex-start; /* Alinha à esquerda */
+        justify-content: center;
+        /* Centraliza o conteúdo verticalmente */
+        align-items: flex-start;
+        /* Alinha à esquerda */
         padding: 30px;
         gap: 15px;
         border-radius: 12px;
 
         background: linear-gradient(to right,
-            rgba(0, 0, 0, 1) 40%,
-            rgba(0, 0, 0, 0.8) 50%,
-            rgba(0, 0, 0, 0) 100%);
+                rgba(0, 0, 0, 1) 40%,
+                rgba(0, 0, 0, 0.8) 50%,
+                rgba(0, 0, 0, 0) 100%);
 
         h1 {
             font-size: 45px;
@@ -112,14 +114,20 @@
                     margin: 0;
                 }
 
+                .apostaAberta {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+
                 .prazoHorario {
-                    font-size: 20px;
+                    font-size: 25px;
                     font-weight: 500;
                 }
             }
         }
 
         .botaoInfo {
+            text-decoration: none;
             font-weight: 500;
             font-size: 25px;
             padding: 14px 20px;
@@ -132,6 +140,7 @@
             cursor: pointer;
             display: flex;
             font-family: "Poppins", sans-serif;
+
             &:hover {
                 transform: scale(1.1);
             }

@@ -12,17 +12,13 @@ import Termos from '../../pages/Termos'
             <section className={style.rodape}>
                 <div className={style.linksContainer}>
                     <div className={style.esportes}>
-                        <h1>Esportes</h1>
-                        <a href="">Ao Vivo</a>
-                        <a href="">Esportes</a>
-                        <a href="">Regra de apostas</a>
+                        <h1>Apostas</h1>
+                        <a href="/jogosAoVivo">Ao Vivo</a>
+                        <a href="/esportes">Esportes</a>
                     </div>
                     <div className={style.cassino}>
                         <h1>Cassino</h1>
-                        <a href="">VIP's</a>
-                        <a href="">Promoções</a>
                         <a href="">Jogos</a>
-                        <a href="">Regras do Cassino</a>
                     </div>
                     <div className={style.SobreNos}>
                         <h1>Sobre Nós</h1>

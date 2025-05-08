@@ -19,77 +19,96 @@ import zeus from '../images/JogoseSlots/zeus.png'
 
 const Slots = [
     {
-        titulo:"Sweet Bonanza 1000",
+        id: 1,
+        titulo: "Sweet Bonanza 1000",
         src: bonanza,
     },
     {
-        titulo:"Gates of Olympus 1000",
+        id: 2,
+        titulo: "Gates of Olympus 1000",
         src: gates,
     },
     {
-        titulo:"Aztec Smash",
+        id: 3,
+        titulo: "Aztec Smash",
         src: aztec,
     },
     {
-        titulo:"Baccarat",
+        id: 4,
+        titulo: "Baccarat",
         src: baccarat,
     },
     {
-        titulo:"Big Bass Crash",
+        id: 5,
+        titulo: "Big Bass Crash",
         src: bigbass,
     },
     {
-        titulo:"Boxes",
+        id: 6,
+        titulo: "Boxes",
         src: boxes,
     },
     {
-        titulo:"Irish Crown",
+        id: 7,
+        titulo: "Irish Crown",
         src: crown,
     },
     {
-        titulo:"High Flyer",
+        id: 8,
+        titulo: "High Flyer",
         src: flyer,
     },
     {
-        titulo:"Le Bandit",
+        id: 9,
+        titulo: "Le Bandit",
         src: lebandit,
     },
     {
-        titulo:"Mines",
+        id: 10,
+        titulo: "Mines",
         src: mines,
     },
     {
-        titulo:"Plinko",
+        id: 11,
+        titulo: "Plinko",
         src: plinko,
     },
     {
-        titulo:"Rip City",
+        id: 12,
+        titulo: "Rip City",
         src: ripcity,
     },
     {
-        titulo:"Roulette",
+        id: 13,
+        titulo: "Roulette",
         src: roulette,
     },
     {
-        titulo:"SIXSIXSIX",
+        id: 14,
+        titulo: "SIXSIXSIX",
         src: sixsix,
     },
     {
-        titulo:"Space Man",
+        id: 15,
+        titulo: "Space Man",
         src: spaceman,
     },
     {
-        titulo:"Sugar Rush 1000",
+        id: 16,
+        titulo: "Sugar Rush 1000",
         src: sugar,
     },
     {
-        titulo:"Wanted",
+        id: 17,
+        titulo: "Wanted",
         src: wanted,
     },
     {
-        titulo:"Zeus vs Hades",
+        id: 18,
+        titulo: "Zeus vs Hades",
         src: zeus,
     },
 ];
+
 
 export default Slots;

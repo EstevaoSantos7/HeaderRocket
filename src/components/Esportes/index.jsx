@@ -46,7 +46,7 @@ export default function Esportes() {
                     </div>
                     <div className={style.timesAposta}>
                         {apostas.slice(0, 9).map(aposta => (
-                            <a href='/DetalhesSport' className={style.caixaFut} key={aposta.id}>
+                            <a href={`/detalhesSport/${aposta.id}`}  className={style.caixaFut} key={aposta.id}>
                                 <div className={style.time}>
                                     <div className={style.timeAposta}>
                                         <img src={aposta.imagemTimeCasa} alt="" />
@@ -85,35 +85,35 @@ export default function Esportes() {
                     </div>
                     <div className={style.timesAposta}>
                         {apostas.slice(12, 18).map(aposta => (
-                            <a href='/DetalhesSport' className={style.caixaFut} key={aposta.id}>
-                                <div className={style.time}>
-                                    <div className={style.timeAposta}>
-                                        <img src={aposta.imagemTimeCasa} alt="" />
-                                        <p>{aposta.timeCasa}</p>
-                                    </div>
-                                    <div className={style.meio}>
-                                        <p className={style.genero}>{aposta.generoJogo}</p>
-                                        <p className={style.xis}>X</p>
-                                        <p className={style.horario}>{aposta.horarioJogo}</p>
-                                    </div>
-                                    <div className={style.timeAposta}>
-                                        <img src={aposta.imagemTimeFora} alt="" />
-                                        <p>{aposta.timeFora}</p>
-                                    </div>
-                                </div>
-                                <hr />
-                                <div className={style.odds}>
-                                    <div className={style.vitoria}>
-                                        <span>{aposta.resultadoCasa}</span>
-                                    </div>
-                                    <div className={style.empate}>
-                                        <span>{aposta.resultadoEmpate}</span>
-                                    </div>
-                                    <div className={style.derrota}>
-                                        <span>{aposta.resultadoFora}</span>
-                                    </div>
-                                </div>
-                            </a>
+                             <a href={`/detalhesSport/${aposta.id}`}  className={style.caixaFut} key={aposta.id}>
+                             <div className={style.time}>
+                                 <div className={style.timeAposta}>
+                                     <img src={aposta.imagemTimeCasa} alt="" />
+                                     <p>{aposta.timeCasa}</p>
+                                 </div>
+                                 <div className={style.meio}>
+                                     <p className={style.genero}>{aposta.generoJogo}</p>
+                                     <p className={style.xis}>X</p>
+                                     <p className={style.horario}>{aposta.horarioJogo}</p>
+                                 </div>
+                                 <div className={style.timeAposta}>
+                                     <img src={aposta.imagemTimeFora} alt="" />
+                                     <p>{aposta.timeFora}</p>
+                                 </div>
+                             </div>
+                             <hr />
+                             <div className={style.odds}>
+                                 <div className={style.vitoria}>
+                                     <span>{aposta.resultadoCasa}</span>
+                                 </div>
+                                 <div className={style.empate}>
+                                     <span>{aposta.resultadoEmpate}</span>
+                                 </div>
+                                 <div className={style.derrota}>
+                                     <span>{aposta.resultadoFora}</span>
+                                 </div>
+                             </div>
+                         </a>
                         ))}
                     </div>
                 </div>

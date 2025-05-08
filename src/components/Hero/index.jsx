@@ -33,11 +33,11 @@ export default function Hero() {
                 <div className={style.parteBaixa}>
                     
 
-                    <button className={style.botaoInfo}>
+                    <a href='/Esportes' className={style.botaoInfo}>
                         Apostar
-                    </button>
+                    </a>
                     <div className={style.prazo}>
-                        <p>
+                        <p className={style.apostaAberta}>
                             Apostas abertas até
                         </p>
                         <p className={style.prazoHorario}>

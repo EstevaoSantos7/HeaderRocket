@@ -17,8 +17,8 @@ function CentralAjuda() {
                 <div className={style.containerCentral}>
                     <Sidebar open={open} />
                     <div className={style.conteudoCentral}>
-                        <CentralComp/>
-                        <Rodape/>
+                        <CentralComp />
+                        <Rodape />
                     </div>
                 </div>
             </div>

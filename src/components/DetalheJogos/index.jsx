@@ -1,16 +1,16 @@
 import style from './style.module.css';
 
-import imgTeste from '../../images/CassinoVivo/baccarat.png'
 
-export default function DetalheSlot({slot}) {
+
+export default function DetalheSlot({jogos}) {
     return (
         <div className={style.containerDetalhes}>
          <div className={style.imagemJogo }>
-         <img className={style.capaJogo} src={slot.src} alt="" />
+         <img className={style.capaJogo} src={jogos.src} alt="" />
          </div>
             <div className={style.conteudoDetalhes}>
                 <div className={style.textoOne}>
-                    <h3 className={style.nameSlot}>🎰{slot.titulo}</h3>
+                    <h3 className={style.nameSlot}>🎰{jogos.titulo}</h3>
                 <p>
                 É o jogo de aposta que junta a emoção da roleta com o tempero único do Brasil! Ao vivo e direto para a sua tela, essa experiência eletrizante te coloca na mesa com jogadores reais, dealers carismáticos e chances quentíssimas de ganhar alto.                    </p>
                 </div>

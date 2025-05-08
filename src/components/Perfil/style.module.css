@@ -177,3 +177,62 @@ body {
 
     /* azul escuro */
 }
+@media (max-width:1180px) {
+    .containerConteudo {
+        flex-direction: column;
+    }
+   
+}
+@media (max-width:680px) {
+    .saldoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   
+}
+
+@media (max-width:770px) {
+    .Mais {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column000;
+    }
+    .dados{
+        width:100%;
+        flex-direction: column;
+    }
+   
+        
+
+    .titleSection {
+        font-size: 30px;
+    }
+  
+}
+
+@media (max-width:580px) {
+    .titleSection {
+
+        text-align: center;
+    }
+    
+   
+    
+}
+
+@media (max-width:550px) {
+    .titleSection {
+
+        text-align: center;
+    }
+    .botaoperfil{
+        width: 50%;
+        align-self: center;
+      
+       
+    }
+    
+    
+}

@@ -4,11 +4,16 @@ import Sidebar from '../components/Sidebar'
 import style from '../styles/esporte.module.css'
 import Rodape from "../components/Rodape";
 import Esportes from "../components/Esportes";
+import apostas from "../dataAposta/users";
+import { useParams } from "react-router-dom";
 
 
 
 function Esporte() {
     const [open, setOpen] = useState(false);
+    const {id} = useParams();
+
+    const aposta  = apostas.find(aposta => aposta.id === parseInt(id))
 
     return (
         <>
@@ -17,7 +22,7 @@ function Esporte() {
                 <div className={style.containerEsporte}>
                     <Sidebar open={open} />
                     <div className={style.conteudoEsporte}>
-                        <Esportes/>
+                        <Esportes  aposta={aposta}/>
                         <Rodape/>
                     </div>
                 </div>

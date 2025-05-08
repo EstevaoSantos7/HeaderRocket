@@ -80,4 +80,37 @@
         }
     }
 }
+@media (max-width:930px) {
+    .TermoseCondicoes {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:1309px) {
+    .footerText {
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        
+
+    .titleSection {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:580px) {
+    .titleSection {
+
+        text-align: center;
+    }
+}
+
+@media (max-width:550px) {
+    .titleSection {
+
+        text-align: center;
+    }
+}
 

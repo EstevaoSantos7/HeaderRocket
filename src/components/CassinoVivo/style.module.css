@@ -73,6 +73,7 @@
            
            .caixaJogoCassino{
             transition: all 0.3s;
+            cursor: pointer;
             img{
                 width: 100%;
                 height: 100%;

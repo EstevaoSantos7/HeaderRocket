@@ -35,9 +35,11 @@
     .SobreNos{
         display: flex;
         flex-direction: column;
+      
         gap: 20px;
         border-right: solid #485B74 1px;  
         padding-left: 50px;
+        padding-right: 10px;
     }
     .ajuda{
         display: flex;

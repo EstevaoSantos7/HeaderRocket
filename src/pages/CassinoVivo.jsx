@@ -4,11 +4,16 @@ import Sidebar from '../components/Sidebar'
 import style from '../styles/cassinoVivo.module.css'
 import Rodape from "../components/Rodape";
 import CassinoVivo from "../components/CassinoVivo";
+import cassinoVivo from '../dataAposta/cassinoVivo'
+import { useParams } from "react-router-dom";
 
 
 
 function CassinoAoVivo() {
     const [open, setOpen] = useState(false);
+    const { id } = useParams();
+
+    const cassino = cassinoVivo.find(cassino => cassino.id === parseInt(id))
 
     return (
         <>
@@ -17,7 +22,7 @@ function CassinoAoVivo() {
                 <div className={style.containerCassinoVivo}>
                     <Sidebar open={open} />
                     <div className={style.conteudoCassinoVivo}>
-                        <CassinoVivo/>
+                        <CassinoVivo cassino={cassino}/>
                         <Rodape/>
                     </div>
                 </div>

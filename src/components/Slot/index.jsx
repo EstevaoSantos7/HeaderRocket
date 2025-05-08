@@ -7,7 +7,7 @@ import { IoTrophySharp } from 'react-icons/io5'
 import { GiPresent } from 'react-icons/gi'
 import { VscPerson } from 'react-icons/vsc'
 
-export default function CassinoVivo() {
+export default function CassinoVivo(slot) {
     return (
         <div className={style.containerCassino}>
             <div className={style.gridFiltro}>
@@ -40,9 +40,9 @@ export default function CassinoVivo() {
                     <h1>Slots</h1>
                 </div>
                 <div className={style.gridContainer}>
-                    {Slots.slice(0, 15).map(Slot => (
-                        <a href='/' className={style.caixaJogoCassino} key={Slot.id}>
-                            <img src={Slot.src} alt="" />
+                    {Slots.slice(0, 15).map(slot => (
+                        <a href={`/detalhesSlot/${slot.id}`} className={style.caixaJogoCassino} key={slot.id}>
+                            <img src={slot.src} alt="" />
                         </a>
                     ))}
                 </div>

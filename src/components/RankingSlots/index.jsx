@@ -1,8 +1,7 @@
 import Header from "../Header";
 import style from "./style.module.css";
 
-// importanto imagens
-
+// Importando imagens
 import slot1 from "../../images/Ranking Images/Slot 1.png";
 import slot2 from "../../images/Ranking Images/Slot 2.png";
 import slot3 from "../../images/Ranking Images/Slot 3.png";
@@ -13,108 +12,84 @@ import slot7 from "../../images/Ranking Images/Slot 7.png";
 import slot8 from "../../images/Ranking Images/Slot 8.png";
 import { FaRegStar } from "react-icons/fa";
 
+// Dados do ranking
+const ranking = [
+  {
+    id: 1, // Adicionando um id único
+    src: slot1,
+    titulo: "Slot 1",
+    nota: 4.9,
+  },
+  {
+    id: 2, // Adicionando um id único
+    src: slot2,
+    titulo: "Slot 2",
+    nota: 4.8,
+  },
+  {
+    id: 3, // Adicionando um id único
+    src: slot3,
+    titulo: "Slot 3",
+    nota: 4.7,
+  },
+  {
+    id: 4, // Adicionando um id único
+    src: slot4,
+    titulo: "Slot 4",
+    nota: 4.6,
+  },
+  {
+    id: 5, // Adicionando um id único
+    src: slot5,
+    titulo: "Slot 5",
+    nota: 4.5,
+  },
+  {
+    id: 6, // Adicionando um id único
+    src: slot6,
+    titulo: "Slot 6",
+    nota: 4.4,
+  },
+  {
+    id: 7, // Adicionando um id único
+    src: slot7,
+    titulo: "Slot 7",
+    nota: 4.3,
+  },
+  {
+    id: 8, // Adicionando um id único
+    src: slot8,
+    titulo: "Slot 8",
+    nota: 4.2,
+  },
+];
+
+
 export default function RankingSlots() {
   return (
     <>
       <div className={style.containerRankingSlots}>
         <h1 className={style.titleSection}>Ranking dos melhores jogos</h1>
         <div className={style.conteudoRankingSlots}>
-          <a href="/detalhesSlot" className={style.Slot}>
-            <div className={style.imgSlot}>
-              <img src={slot1} alt="slot1" />
-            </div>
+          {/* Aqui vamos mapear os slots a partir do ranking */}
+          {ranking.slice(0, 8).map((aposta, index) => (
+            <a
+              key={index} // Usando `index` como chave única
+              href={`/detalhesSlot/${aposta.id}`} // Alterado para usar `aposta.titulo`
+              className={style.Slot}
+            >
+              <div className={style.imgSlot}>
+                <img src={aposta.src} alt={`Imagem do ${aposta.titulo}`} />
+              </div>
 
-            <div className={style.rateSlot}>
-              <FaRegStar />
-              <h2> 4,9</h2>
-            </div>
+              <div className={style.rateSlot}>
+                <FaRegStar />
+                <h2>{aposta.nota}</h2> {/* Exibindo a nota do slot */}
+              </div>
 
-            <h3 className={style.position}>1° Lugar</h3>
-          </a>
-          <a href="/detalhesSlot" className={style.Slot}>
-            <div className={style.imgSlot}>
-              <img src={slot2} alt="slot2" />
-            </div>
-
-            <div className={style.rateSlot}>
-              <FaRegStar />
-              <h2> 4,7</h2>
-            </div>
-
-            <h3 className={style.position}>2° Lugar</h3>
-          </a>
-          <a href="/detalhesSlot" className={style.Slot}>
-            <div className={style.imgSlot}>
-              <img src={slot3} alt="slot3" />
-            </div>
-
-            <div className={style.rateSlot}>
-              <FaRegStar />
-              <h2> 4,5</h2>
-            </div>
-
-            <h3 className={style.position}>3° Lugar</h3>
-          </a>
-          <a href="/detalhesSlot" className={style.Slot}>
-            <div className={style.imgSlot}>
-              <img src={slot4} alt="slot4" />
-            </div>
-
-            <div className={style.rateSlot}>
-              <FaRegStar />
-              <h2> 4,3</h2>
-            </div>
-
-            <h3 className={style.position}>4° Lugar</h3>
-          </a>
-          <a href="/detalhesSlot" className={style.Slot}>
-            <div className={style.imgSlot}>
-              <img src={slot5} alt="slot5" />
-            </div>
-
-            <div className={style.rateSlot}>
-              <FaRegStar />
-              <h2> 4,0</h2>
-            </div>
-
-            <h3 className={style.position}>5° Lugar</h3>
-          </a>
-          <a href="/detalhesSlot" className={style.Slot}>
-            <div className={style.imgSlot}>
-              <img src={slot6} alt="slot6" />
-            </div>
-
-            <div className={style.rateSlot}>
-              <FaRegStar />
-              <h2> 3,8</h2>
-            </div>
-
-            <h3 className={style.position}>6° Lugar</h3>
-          </a>
-          <a href="/detalhesSlot" className={style.Slot}>
-            <div className={style.imgSlot}>
-              <img src={slot7} alt="slot7" />
-            </div>
-
-            <div className={style.rateSlot}>
-              <FaRegStar />
-              <h2> 3,4</h2>
-            </div>
-
-            <h3 className={style.position}>7° Lugar</h3>
-          </a>
-          <a href="/detalhesSlot" className={style.Slot}>
-            <div className={style.imgSlot}>
-              <img src={slot8} alt="slot8" />
-            </div>
-
-            <div className={style.rateSlot}>
-              <FaRegStar />
-              <h2> 3,0</h2>
-            </div>
-
-            <h3 className={style.position}>8° Lugar</h3>
-          </a>
+              <h3 className={style.position}>{index + 1}° Lugar</h3> {/* Exibe o número da posição */}
+            </a>
+          ))}
         </div>
       </div>
     </>

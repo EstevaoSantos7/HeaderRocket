@@ -56,22 +56,22 @@ export default function Carrosel4({ titulo, videos }) {
       </div>
       <div className={sty.carrossel}>
         <div className={sty.carrosselItens}>
-          <a href='/detalhesSlot' className={sty.item}>
+          <a href={`/detalhesSlot/${item1.id}`} className={sty.item}>
             <img src={item1.src} alt="item 1" />
           </a>
-          <a href='/detalhesSlot' className={sty.item}>
+          <a href={`/detalhesSlot/${item2.id}`} className={sty.item}>
             <img src={item2.src} alt="item 2" />
           </a>
-          <a href='/detalhesSlot' className={sty.item}>
+          <a href={`/detalhesSlot/${item3.id}`} className={sty.item}>
             <img src={item3.src} alt="item 3" />
           </a>
-          <a href='/detalhesSlot' className={sty.item}>
+          <a href={`/detalhesSlot/${item4.id}`} className={sty.item}>
             <img src={item4.src} alt="item 4" />
           </a>
-          <a href='/detalhesSlot' className={sty.item}>
+          <a href={`/detalhesSlot/${item5.id}`} className={sty.item}>
             <img src={item5.src} alt="item 5" />
           </a>
-          <a href='/detalhesSlot' className={sty.item}>
+          <a href={`/detalhesSlot/${item6.id}`} className={sty.item}>
             <img src={item6.src} alt="item 6" />
           </a>
         </div>
