@@ -15,51 +15,66 @@ import stock from '../images/JogosVivo/stock.png'
 import storm from '../images/JogosVivo/storm.png'
 
 const JogosVivo = [
-{
-src:blackjack,
-},
-{
-src:ball,
-},
-{
-src:cash,
-},
-{
-src:crazy,
-},
-{
-src:deal,
-},
-{
-src:dice,
-},
-{
-src:dream,
-},
-{
-src:fortune,
-},
-{
-src:funky,
-},
-{
-src:monopoly,
-},
-{
-src:loira,
-},
-{
-src:pachinko,
-},
-{
-src:race,
-},
-{
-src:stock,
-},
-{
-src:storm,
-},
+    {
+        titulo: "Lightning BlackJack",
+        src: blackjack,
+    },
+    {
+        titulo: "Lightning Ball",
+        src: ball,
+    },
+    {
+        titulo:"Cash or Crash",
+        src: cash,
+    },
+    {
+        titulo:"Crazy Time",
+        src: crazy,
+    },
+    {
+        titulo:"Deal or No Deal",
+        src: deal,
+    },
+    {
+        titulo:"Lightning Dice",
+        src: dice,
+    },
+    {
+        titulo:"Dream Catcher",
+        src: dream,
+    },
+    {
+        titulo:"Fortune Roulette",
+        src: fortune,
+    },
+    {
+        titulo:"Funky Time",
+        src: funky,
+    },
+    {
+        titulo:"Monopoly",
+        src: loira,
+    },
+    {
+        titulo:"Monopoly Big Baller",
+        src: monopoly,
+    },
+    {
+        titulo:"Crazy Pachinko",
+        src: pachinko,
+    },
+    {
+        titulo:"Balloon Race",
+        src: race,
+    },
+    {
+        titulo:"Stock Martek",
+        src: stock,
+    },
+    {
+        titulo:"Lightning Storm",
+        src: storm,
+    },
 ];
 
 export default JogosVivo;

@@ -1,7 +1,7 @@
 import style from './style.module.css'
 import { SlPresent } from "react-icons/sl";
 import { CiCreditCard1 } from "react-icons/ci";
-import { FaRegComment, FaRegQuestionCircle, FaHome } from "react-icons/fa";
+import { FaRegComment, FaRegQuestionCircle, FaHome, FaFireAlt } from "react-icons/fa";
 import { PiMedalDuotone, PiPokerChipFill, PiBomb, PiSoccerBallFill } from "react-icons/pi";
 import { FiUser } from "react-icons/fi";
 import { RiPokerClubsFill, RiPlaneFill, RiPokerSpadesFill } from "react-icons/ri";
@@ -13,6 +13,7 @@ import { GiPresent } from "react-icons/gi";
 import Sobre from '../../pages/Sobre';
 import Home from '../../pages/Home'
 import Lobby from '../../pages/Lobby';
+import { IoIosInformationCircleOutline } from 'react-icons/io';
 
 
 
@@ -30,13 +31,15 @@ export default function Sidebar({ open }) {
                                 <a href="/">Home</a>
                             </a>
                             <a className={style.bloco}>
-                                <SlPresent size={25} color='white' />
-                                <a href="/">Promoções</a>
+                                <PiMedalDuotone size={25} color='white' />
+                                <a href="/Ranking">Ranking de Slots</a>
+
                             </a>
                             <a className={style.bloco}>
-                                <CiCreditCard1 size={25} color='white' />
-                                <a href="/">Ticket VIP</a>
+                                <IoIosInformationCircleOutline size={30} color='white' />
+                                <a href="/termos">Termos De Condição</a>
                             </a>
+
                             <a className={style.bloco}>
                                 <FaRegComment size={25} color='white' />
                                 <a href="/central">Ajuda</a>
@@ -46,11 +49,7 @@ export default function Sidebar({ open }) {
                                 <a href="/sobre">Sobre</a>
 
                             </a>
-                            <a className={style.bloco}>
-                                <PiMedalDuotone size={25} color='white' />
-                                <a href="/Ranking">Ranking de Slots</a>
 
-                            </a>
                             <a className={style.bloco}>
                                 <FiUser size={25} color='white' />
                                 <a href="/perfil">Conta</a>
@@ -58,36 +57,7 @@ export default function Sidebar({ open }) {
                             </a>
 
                         </div>
-                        <div className={style.elementos}>
 
-                            <a className={style.bloco}>
-                                <GiPokerHand size={25} color='white' />
-                                <a href="/">Black Jack</a>
-                            </a>
-                            <a className={style.bloco}>
-                                <PiPokerChipFill size={25} color='white' />
-                                <a href="/">Roleta</a>
-                            </a>
-                            <a className={style.bloco}>
-                                <TbBallFootball size={25} color='white' />
-                                <a href="/">Bacará</a>
-                            </a>
-                            <a className={style.bloco}>
-                                <RiPokerClubsFill size={25} color='white' />
-                                <a href="/">Cassino hold </a>
-                            </a>
-                            <a className={style.bloco}>
-                                <RiPlaneFill size={25} color='white' />
-                                <a href="/">Aviator Game</a>
-
-                            </a>
-                            <a className={style.bloco}>
-                                <PiBomb size={25} color='white' />
-                                <a href="/">Mines</a>
-
-                            </a>
-
-                        </div>
                         <div className={style.elementos}>
 
                             <a className={style.bloco}>
@@ -98,7 +68,7 @@ export default function Sidebar({ open }) {
                         <div className={style.elementos}>
 
                             <a className={style.bloco}>
-                                <GiPresent  size={25} color='white' />
+                                <GiPresent size={25} color='white' />
                                 <a href="/CassinoAoVivo">Cassino ao vivo</a>
                             </a>
                         </div>
@@ -112,7 +82,7 @@ export default function Sidebar({ open }) {
                         <a className={style.elementos}>
 
                             <a className={style.bloco}>
-                                <MdOutlineCasino size={25} color='white' />
+                                <FaFireAlt size={25} color='white' />
                                 <a href="/Slots">Slots</a>
                             </a>
                         </a>
@@ -139,14 +109,15 @@ export default function Sidebar({ open }) {
                                 <a href='/' className={style.caixa}>
                                     <IoHomeOutline size={25} color='white' />
                                 </a>
-                                <a href='/' className={style.caixa}>
-                                    <SlPresent size={25} color='white' />
+                                <a href='/Ranking' className={style.caixa}>
+                                    <PiMedalDuotone size={25} color='white' />
 
                                 </a>
-                                <a href='/' className={style.caixa}>
-                                    <CiCreditCard1 size={25} color='white' />
+                                <a href='/termos' className={style.caixa}>
+                                    <IoIosInformationCircleOutline size={25} color='white' />
 
                                 </a>
+
                                 <a href='/central' className={style.caixa}>
                                     <FaRegComment size={25} color='white' />
 
@@ -155,10 +126,7 @@ export default function Sidebar({ open }) {
                                     <FaRegQuestionCircle size={25} color='white' />
 
                                 </a>
-                                <a href='/Ranking' className={style.caixa}>
-                                    <PiMedalDuotone size={25} color='white' />
 
-                                </a>
                                 <a href='/perfil' className={style.caixa}>
                                     <FiUser size={25} color='white' />
 
@@ -166,35 +134,7 @@ export default function Sidebar({ open }) {
                             </div>
 
                         </div>
-                        <div className={style.elementos}>
-                            <div className={style.icones}>
-                                <a href='/' className={style.caixa}>
-                                    <GiPokerHand size={25} color='white' />
 
-                                </a>
-                                <a href='/' className={style.caixa}>
-                                    <PiPokerChipFill size={25} color='white' />
-
-                                </a>
-                                <a href='/' className={style.caixa}>
-                                    <TbBallFootball size={25} color='white' />
-
-                                </a>
-                                <a href='/' className={style.caixa}>
-                                    <RiPokerClubsFill size={25} color='white' />
-
-                                </a>
-                                <a href='/' className={style.caixa}>
-                                    <RiPlaneFill size={25} color='white' />
-
-                                </a>
-                                <a href='/' className={style.caixa}>
-                                    <PiBomb size={25} color='white' />
-
-                                </a>
-                            </div>
-
-                        </div>
                         <div className={style.elementosFinal}>
                             <div className={style.icones}>
                                 <a href='/lobby' className={style.caixa}>
@@ -210,7 +150,7 @@ export default function Sidebar({ open }) {
 
                                 </a>
                                 <a href='/Slots' className={style.caixa}>
-                                    <MdOutlineCasino size={25} color='white' />
+                                    <FaFireAlt size={25} color='white' />
 
                                 </a>
                                 <a href='/Esportes' className={style.caixa}>

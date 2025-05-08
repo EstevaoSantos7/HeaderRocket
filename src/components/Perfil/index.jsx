@@ -87,8 +87,9 @@ export default function Perfil() {
 
                 <div className={style.saldoContainer}>
                    <div className={style.caixaSaldo}>
-                   <button className={style.saldoButton}>Adicionar Saldo</button>
                    <h2>Maior Ganho: R$515,00</h2>
+                   <button className={style.saldoButton}>Adicionar Saldo</button>
+                  
                    </div>
 
                 </div>

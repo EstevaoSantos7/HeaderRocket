@@ -65,9 +65,9 @@ export default function Inicio() {
                             <h1  className={style.tituloCampeonato}>Libertadores</h1>
                             <p className={style.descCampeonato}>"Na Libertadores, a bola queimar e a aposta ferve
                                 aqui, quem arrisca vibra como campeão."</p>
-                            <button className={style.botaoApostar}>
+                            <a href='/Esportes' className={style.botaoApostar}>
                                 Apostar
-                            </button>
+                            </a>
                         </div>
                         <div className={style.imagemCampeonato}>
                             <img className={style.imgCampeonato} src={Libertadores} alt="" />
@@ -78,9 +78,9 @@ export default function Inicio() {
                             <h1 className={style.tituloCampeonato}>Champions League</h1>
                             <p className={style.descCampeonato}>"Na Champions, cada lance vale um título
                                 — e cada aposta pode virar uma lenda."</p>
-                            <button className={style.botaoApostar}>
+                            <a href='/Esportes' className={style.botaoApostar}>
                                 Apostar
-                            </button>
+                            </a>
                         </div>
                         <div className={style.imagemCampeonato}>
                             <img className={style.imgCampeonato} src={Champions} alt="" />
@@ -91,11 +91,11 @@ export default function Inicio() {
                     <div className={style.tituloBar}>
                         <h1 className={style.tituloCampeonato}>Principais Apostas</h1>
                         <div className={style.verMaisBotao}>
-                            <button>
+                            <a href='/esportes'>
                                 Ver Mais
                                 <IoIosArrowDown color="#197EFF" size={40} />
 
-                            </button>
+                            </a>
                         </div>
                     </div>
 

@@ -55,21 +55,21 @@ export default function Carrosel4({ titulo, videos }) {
       </div>
       <div className={sty.carrossel}>
         <div className={sty.carrosselItens}>
-          <div className={sty.item}>
+          <a href='/detalhesSlot' className={sty.item}>
             <img src={item1.src} alt="item 1" />
-          </div>
-          <div className={sty.item}>
+          </a>
+          <a href='/detalhesSlot' className={sty.item}>
             <img src={item2.src} alt="item 2" />
-          </div>
-          <div className={sty.item}>
+          </a>
+          <a href='/detalhesSlot' className={sty.item}>
             <img src={item3.src} alt="item 3" />
-          </div>
-          <div className={sty.item}>
+          </a>
+          <a href='/detalhesSlot' className={sty.item}>
             <img src={item4.src} alt="item 4" />
-          </div>
-          <div className={sty.item}>
+          </a>
+          <a href='/detalhesSlot' className={sty.item}>
             <img src={item5.src} alt="item 5" />
-          </div>
+          </a>
         </div>
       </div>
     </div>

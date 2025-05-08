@@ -131,6 +131,7 @@
 
 
             .botaoApostar {
+                text-decoration: none;
                 padding: 6px;
                 border-radius: 12px;
                 max-width: 200px;
@@ -143,6 +144,7 @@
                 border: 0;
                 transition: 0.5s;
                 font-family: "Poppins", sans-serif;
+                text-align: center;
 
                 &:hover {
                     transform: scale(1.07);
@@ -173,7 +175,11 @@
     }
 
     .verMaisBotao {
-        button {
+        background-color: #fff;
+        border-radius: 11px;
+        transition: all 0.5s;
+        a {
+            text-decoration: none;
             padding: 6px 40px;
             border-radius: 11px;
             color: #197EFF;
@@ -183,7 +189,7 @@
             align-items: center;
             border: 0;
             cursor: pointer;
-            transition: all 0.5s;
+           
         }
 
         &:hover {

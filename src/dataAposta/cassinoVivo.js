@@ -15,66 +15,81 @@ import super8 from '../images/CassinoVivo/super8.png'
 import vegasball from '../images/CassinoVivo/vegasball.png'
 
 const cassinoVivo = [
-{
-    id:1
-,   src:baccarat,
-},
-{
-    id:2
-,   src:baccarat2,
-},
-{
-    id:3
-,   src:blackjack,
-},
-{
-    id:4
-,   src:blackjack2,
-},
-{
-    id:5
-,   src:brazilian,
-},
-{
-    id:6
-,   src:brazilianroulette,
-},
-{
-    id:7
-,   src:candyland,
-},
-{
-    id:8
-,   src:craps,
-},
-{
-    id:9
-,   src:dragon,
-},
-{
-    id:10,  
-src:megaroleta,
-},
-{
-    id:11,  
-src:lightning,
-},
-{
-    id:12,  
-src:roulette,
-},
-{
-    id:13,  
-src:roulette2,
-},
-{
-    id:14,  
-src:super8,
-},
-{
-    id:15,  
-src:vegasball,
-},
+    {
+        titulo: "Baccarat",
+        id: 1
+        , src: baccarat,
+    },
+    {
+        titulo: "Baccarat",
+        id: 2
+        , src: baccarat2,
+    },
+    {
+        titulo: "BlackJack",
+        id: 3
+        , src: blackjack,
+    },
+    {
+        titulo: "BlackJack",
+        id: 4
+        , src: blackjack2,
+    },
+    {
+        titulo: "Brazilian one BlackJack",
+        id: 5
+        , src: brazilian,
+    },
+    {
+        titulo: "Brazilian Roulette",
+        id: 6
+        , src: brazilianroulette,
+    },
+    {
+        titulo: "Sweet Bonanza CandyLand",
+        id: 7
+        , src: candyland,
+    },
+    {
+        titulo: "Craps",
+        id: 8
+        , src: craps,
+    },
+    {
+        titulo: "Dragon Tiger",
+        id: 9
+        , src: dragon,
+    },
+    {
+        titulo:"Lightning Roulette",
+        id: 10,
+        src: lightning,
+    },
+    {
+        titulo:"Mega Roleta Brasil",
+        id: 11,
+        src: megaroleta,
+    },
+    {
+        titulo:"Roulette",
+        id: 12,
+        src: roulette,
+    },
+    {
+        titulo:"Roulette",
+        id: 13,
+        src: roulette2,
+    },
+    {
+        titulo:"Super 8 Baccarat",
+        id: 14,
+        src: super8,
+    },
+    {
+        titulo:"Vegas Ball Bonanza",
+        id: 15,
+        src: vegasball,
+    },
 ];
 
 export default cassinoVivo;
