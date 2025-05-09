@@ -5,7 +5,15 @@
     background-color: #080c1c;
     border-radius: 12px;
     overflow: hidden;
-
+    @media (max-width: 1000px) {
+        height: 55vh;
+    }
+    @media (max-width: 740px) {
+        height: 45vh;
+    }
+   @media (max-width: 701px) {
+                    height: 39vh;
+    }
     video {
         position: absolute;
         top: 0;
@@ -34,7 +42,12 @@
         padding: 30px;
         gap: 15px;
         border-radius: 12px;
-
+        @media (max-width: 1000px) {
+        height: auto;
+    }
+    @media (max-width: 875px) {
+       height: 100%;
+    }
         background: linear-gradient(to right,
                 rgba(0, 0, 0, 1) 40%,
                 rgba(0, 0, 0, 0.8) 50%,
@@ -45,6 +58,15 @@
             font-weight: 700;
             margin: 0;
             line-height: 1.2;
+            @media (max-width: 875px) {
+       font-size: 32px;
+    }
+        @media (max-width: 740px) {
+        font-size: 24px;
+    }
+    @media (max-width: 701px) {
+                    font-size: 16px;
+    }
         }
 
         h2 {
@@ -52,6 +74,7 @@
             font-weight: 700;
             margin: 0;
             line-height: 1.4;
+            
         }
 
         .infoMeta {
@@ -64,6 +87,16 @@
             .infoJogo {
                 font-size: 24px;
                 margin: 0;
+                @media (max-width: 875px) {
+       font-size: 18px;
+
+    }
+                         @media (max-width: 740px) {
+        font-size: 14px;
+    } 
+    @media (max-width: 701px) {
+                    font-size: 12px;
+    }
             }
 
             .times {
@@ -74,6 +107,9 @@
 
                 .odd {
                     padding: 10px 15px;
+                    @media (max-width: 740px) {
+                    display: none;
+    }
                 }
 
                 img {
@@ -94,8 +130,18 @@
             max-width: 450px;
             margin: 0;
             line-height: 1.5;
+            @media (max-width: 875px) {
+       font-size: 14px;
+    }
+     @media (max-width: 740px) {
+        font-size: 12px;
+    }
         }
-
+        .desc{
+            @media (max-width: 1000px) {
+        display: none;
+    }
+        }
         .parteBaixa {
             margin-top: 25px;
             display: flex;
@@ -104,7 +150,12 @@
             max-width: 400px;
             align-items: center;
             gap: 55px;
-
+              @media (max-width: 640px) {
+                    flex-direction: column;
+                    gap: 10px;
+                    margin: 0;
+                     align-items: start;
+    }
             .prazo {
                 display: flex;
                 flex-direction: column;
@@ -117,11 +168,25 @@
                 .apostaAberta {
                     font-size: 15px;
                     font-weight: 500;
+                    @media (max-width: 740px) {
+                    font-size: 10px;
+    }
+    
                 }
 
                 .prazoHorario {
                     font-size: 25px;
                     font-weight: 500;
+                    @media (max-width: 701px) {
+        font-size: 20px;
+    }
+    @media (max-width: 701px) {
+                    font-size: 16px;
+    }
+    @media (max-width: 640px) {
+            font-size: 14px;
+    }
+  
                 }
             }
         }
@@ -140,7 +205,20 @@
             cursor: pointer;
             display: flex;
             font-family: "Poppins", sans-serif;
-
+            @media (max-width: 875px) {
+       font-size: 20px;
+    }
+    @media (max-width: 740px) {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    @media (max-width: 640px) {
+                    font-size: 12px;
+    }
+    @media (max-width: 551px) {
+         font-size: 10px;
+         padding: 7px 10px;
+    }
             &:hover {
                 transform: scale(1.1);
             }

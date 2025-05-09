@@ -1,9 +1,9 @@
-.TermoseCondicoes{
+.TermoseCondicoes {
     background-color: #212C3A;
     padding-top: 40px;
 }
 
-.titulo{
+.titulo {
     font-size: 20px;
     display: flex;
     gap: 10px;
@@ -12,23 +12,28 @@
     color: white;
     text-align: center;
     font-style: italic;
-    .cor{
+
+    .cor {
         color: #197EFF;
     }
-    
-}
-.introducao{
-    h1{
-    color: #197EFF;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-}
+
 }
 
-.texto{
+.introducao {
+    h1 {
+        color: #197EFF;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+         @media (max-width:550px) {
+            font-size: 18px;
+        }
+    }
+}
+
+.texto {
     display: flex;
     flex-direction: column;
     gap: 55px;
@@ -36,24 +41,32 @@
     width: 80%;
     margin: 0 auto;
     font-size: 20px;
-    .texto1{
+
+    .texto1 {
         display: flex;
         flex-direction: column;
         gap: 10px;
         font-size: 18px;
-        h2{
+
+      
+
+        h2 {
             color: #197EFF;
             font-size: 22px;
             font-weight: 500;
         }
-        h1{
+
+        h1 {
             font-size: 22px;
             font-weight: 500;
-
+  @media (max-width:550px) {
+            font-size: 15px;
+        }
         }
     }
 }
-.footer{
+
+.footer {
     color: white;
     margin-top: 180px;
     padding-bottom: 30px;
@@ -61,39 +74,40 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    .footer1{
-        .footerText{
+
+    .footer1 {
+        .footerText {
             width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: center;
             gap: 5px;
             font-weight: 400;
-            #suporte{
+             @media (max-width:550px) {
+            font-size: 15px;
+        }
+
+            #suporte {
                 color: #197EFF;
-                
+
             }
-            #central{
+
+            #central {
                 color: #197EFF;
-                
+
             }
         }
     }
 }
-@media (max-width:930px) {
-    .TermoseCondicoes {
-        grid-template-columns: 1fr 1fr;
-    }
-}
+
 
 @media (max-width:1309px) {
     .footerText {
-
         display: flex;
         flex-wrap: wrap;
     }
 
-        
+
 
     .titleSection {
         font-size: 30px;
@@ -112,5 +126,8 @@
 
         text-align: center;
     }
-}
 
+    .texto1 {
+        font-size: 10px;
+    }
+}

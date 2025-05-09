@@ -26,7 +26,7 @@ export default function Hero() {
 
                    </div>
                 </div>
-                <p>  Após derrota do time Alemão,coletiva
+                <p className={style.desc}>  Após derrota do time Alemão,coletiva
                     de imprensa pós jogo Kimichidiz  “Em
                     Munique a história é diferente ” Mostran-
                     do que o jogo será Épico</p>

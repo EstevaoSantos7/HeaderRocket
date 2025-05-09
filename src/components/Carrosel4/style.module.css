@@ -11,9 +11,21 @@
         justify-content: space-between;
         align-items: center;
 
-        h1 {
+      h1 {
             color: white;
             font-size: 40px;
+            @media (max-width:860px) {
+                font-size: 35px;
+            }
+            @media (max-width:760px) {
+                font-size: 30px;
+            }
+            @media (max-width:620px) {
+                font-size:25px;
+            }
+            @media (max-width:590px) {
+                font-size:20px;
+            }
         }
 
         .seta {
@@ -27,13 +39,18 @@
             justify-content: center;
             gap: 15px;
 
+            @media (max-width:760px) {
+              max-width: 120px;
+            }
             .btnmover {
                 background: transparent;
                 border: none;
                 cursor: pointer;
                 transition: all 0.5s;
                 color: white;
-
+                  @media (max-width:760px) {
+              size: 30px;
+            }
                 svg {
                     transition: color 0.5s ease;
                 }
@@ -61,19 +78,18 @@
 }
 
 .carrosselItens {
-    background: transparent;
-    padding: 15px;
-    border-radius: 15px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    transition: transform 0.5s ease;
-    /* Adiciona a transição */
-    gap: 10px;
-    flex: 1;
-    margin: 12px;
-    width: 100%;
-
+  background: transparent;
+  padding: 15px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  
+  gap: 10px;
+  flex: 1;
+  margin: 12px;
+  width: 100%;
 }
+
 
 .item {
     display: flex;

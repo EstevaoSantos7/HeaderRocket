@@ -3,8 +3,9 @@
     flex-direction: column;
     background-color: #212C3A;
     align-items: center;
-    padding: 25px;
-    
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+
 
     .conteudo {
         display: flex;
@@ -27,6 +28,12 @@
             .imagensCamp {
                 max-width: 350px;
                 width: 100%;
+                    @media (max-width:1300px) {
+                          max-width: 170px;
+                    }
+                    @media (max-width:1050px) {
+                          display: none;
+                    }
 
                 img {
                     padding-bottom: 5px;
@@ -36,6 +43,9 @@
                     width: 100%;
                     height: auto;
                     object-fit: contain;
+                       @media (max-width:1300px) {
+                        width: 100%;
+                    }
                 }
             }
 
@@ -47,15 +57,50 @@
                 justify-content: space-between;
                 gap: 45px;
 
+                @media (max-width:1490px) {
+                    max-width: 550px;
+                }
+
+                @media (max-width:1400px) {
+                    max-width: 450px;
+                }
+
+                @media (max-width:1300px) {
+                    max-width: 400px;
+                }
+                 @media (max-width:1070px) {
+                         max-width: 400px;
+                    }
+                 @media (max-width:740px) {
+                         max-width: 300px; 
+                    }
+
                 .tituloBaner {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+                    
+    @media (max-width:740px) {
+                      flex-direction: column;
+                  
+                    }
 
                     h2 {
                         margin-top: 15px;
                         color: white;
                         font-size: 40px;
+
+                        @media (max-width:1490px) {
+                            font-size: 30px;
+                        }
+
+                        @media (max-width:1300px) {
+                            font-size: 25px;
+                        }
+                            @media (max-width:740px) {
+                         font-size: 20px;
+                    }
+
                     }
                 }
 
@@ -64,6 +109,14 @@
                     font-size: 25px;
                     font-weight: 500;
                     max-width: 500px;
+
+                    @media (max-width:1490px) {
+                        font-size: 20px;
+                    }
+                    @media (max-width:740px) {
+                         font-size: 15px;
+                    }
+
                 }
 
                 .botaoCadastrar {
@@ -77,7 +130,9 @@
                     border: 0;
                     cursor: pointer;
                     background-color: #197EFF;
-
+ @media (max-width:740px) {
+                        width: 100%;
+                    }
                     &:hover {
                         transform: scale(1.04);
                         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -94,11 +149,13 @@
 
 .caixasCampeonato {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 25px;
-    display: flex;
    justify-content: center;
-  
+  @media (max-width: 1260px) {
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+  }
 
     .caixaCampeonato {
         
@@ -110,7 +167,10 @@
         display: flex;
         flex-direction: row;
         padding: 15px;
-
+         @media (max-width: 720px) {
+            flex-direction: column;
+            gap: 30px;
+         }
         .conteudoCampeonato {
             flex-wrap: wrap;
             display: flex;
@@ -119,18 +179,76 @@
             max-width: 400px;
             width: 100%;
             color: white;
+             @media (max-width: 720px) {
+           justify-content: center;
+           align-items: center;
 
+         }
             .tituloCampeonato{
                 height: 96px;
                 display: flex;
                 align-items: center;
+                @media (max-width: 780px) {
+                    font-size: 24px;
+                }
             }
             .descCampeonato {
-                height: 60px;
+                 @media (max-width: 780px) {
+                    font-size: 14px;
+                }
             }
 
 
             .botaoApostar {
+                text-decoration: none;
+                padding: 6px;
+                border-radius: 12px;
+                max-width: 200px;
+                width: 100%;
+                color: #fff;
+                background-color: #197EFF;
+                font-size: 25px;
+                font-weight: 600;
+                cursor: pointer;
+                border: 0;
+                transition: 0.5s;
+                font-family: "Poppins", sans-serif;
+                text-align: center;
+                 @media (max-width: 780px) {
+                    font-size: 18px;
+                    max-width: 140px;
+                }
+                &:hover {
+                    transform: scale(1.07);
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                }
+            }
+        }
+
+        .imagemCampeonato {
+            width: 82.2%;
+            display: flex;
+            align-items: center;
+            @media (max-width: 720px) {
+            height: 150px;
+            justify-content: center;
+            width: 100%;
+         }
+            img {
+                object-fit: cover;
+                width: 100%;
+                border-radius: 10px;
+                @media (max-width: 720px) {
+            width: auto;
+            height: 100%;
+         }
+            }
+            
+        }
+    }
+}
+
+ .botaoApostar {
                 text-decoration: none;
                 padding: 6px;
                 border-radius: 12px;
@@ -151,17 +269,6 @@
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
                 }
             }
-        }
-
-        .imagemCampeonato {
-            img {
-                object-fit: cover;
-                width: 230px;
-                border-radius: 10px;
-            }
-        }
-    }
-}
 
 .tituloBar {
     display: flex;
@@ -178,6 +285,13 @@
         background-color: #fff;
         border-radius: 11px;
         transition: all 0.5s;
+
+        @media (max-width:530px) {
+            p {
+                display: none;
+            }
+        }
+
         a {
             text-decoration: none;
             padding: 6px 40px;
@@ -189,25 +303,53 @@
             align-items: center;
             border: 0;
             cursor: pointer;
-           
+
         }
 
         &:hover {
-            transition:all 0.5s;
+            transition: all 0.5s;
             transform: scale(1.1);
         }
     }
 }
-.containerApostas{
-   display: flex;
-   flex-direction: column;
-   .caixa{
-  
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    padding: 20px;
-   }
+
+.containerApostas {
+    display: flex;
+    flex-direction: column;
+
+    .tituloBar {
+        display: flex;
+        flex-direction: row;
+
+        @media (max-width:880px) {
+            flex-direction: column;
+        }
+
+        @media (max-width:560px) {
+            width: 100%;
+        }
+
+        .tituloCampeonato {
+            color: white;
+
+            @media (max-width:880px) {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .caixa {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+
+
+        @media (max-width:1370px) {
+            grid-template-columns: 1fr;
+            margin: 0 auto;
+        }
+    }
 }
 
 
@@ -220,34 +362,55 @@
     flex-direction: column;
     padding: 20px;
     border-radius: 32px;
-    text-decoration: none   ;
+    text-decoration: none;
 
     .time {
-        text-align: center;
-        padding: 10px 20px 0 20px;
-        display: flex;
+
+        padding: 10px 20px 0px 20px;
         justify-content: center;
+        display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 35px;
+        width: 100%;
+
+        @media (max-width:880px) {
+            flex-direction: column;
+        }
 
         .timeAposta {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
+            flex-direction: column;
 
             p {
                 color: white;
             }
 
             img {
-                width: 60px;
-                height: 60px;
+                width: 80px;
+                height: 80px;
+
+                @media (max-width:880px) {
+                    width: 65px;
+                    height: 65px;
+
+                }
+
             }
+
+            .nomeTime {
+                text-align: center;
+            }
+
         }
+
     }
 
     .meio {
         display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
         gap: 8px;
@@ -260,6 +423,11 @@
         .genero {
             font-size: 35px;
             font-weight: 400;
+
+            @media (max-width:880px) {
+                font-size: 26px;
+
+            }
         }
 
         .xis {
@@ -271,63 +439,133 @@
             font-size: 25px;
             font-weight: 500;
         }
+
     }
 
     hr {
         width: 100%;
         height: 3px;
         background-color: #dddddd;
-       border: none;
+        border: none;
     }
 
     .odds {
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         padding-top: 10px;
 
-        .vitoria,
-        .empate,
-        .derrota {
+        .vitoria {
             padding: 10px 15px;
+            background-color: #15DF6D;
             border-radius: 40px;
             max-width: 150px;
             width: 100%;
             text-align: center;
-            cursor: pointer;
+            align-items: center;
             transition: all 0.5s;
+            cursor: pointer;
+
+            @media (max-width:880px) {
+                font-size: 20px;
+                max-width: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &:hover {
+                transform: scale(1.02);
+                background-color: #00ff6e;
+            }
 
             span {
                 color: white;
                 font-size: 25px;
                 font-weight: 700;
-            }
 
-            &:hover {
-                transform: scale(1.02);
-            }
-        }
+                @media (max-width:880px) {
+                    font-size: 20px;
 
-        .vitoria {
-            background-color: #15DF6D;
 
-            &:hover {
-                background-color: #00ff6e;
+                }
+
             }
         }
 
         .empate {
+            padding: 10px 15px;
             background-color: #406493;
+            border-radius: 40px;
+            max-width: 150px;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            transition: all 0.5s;
+            cursor: pointer;
+
+            @media (max-width:880px) {
+                font-size: 20px;
+                max-width: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
             &:hover {
+                transform: scale(1.02);
                 background-color: #1e66c5;
+            }
+
+            span {
+                color: white;
+                font-size: 25px;
+                font-weight: 700;
+
+                @media (max-width:880px) {
+                    font-size: 20px;
+
+
+                }
+
             }
         }
 
         .derrota {
+            padding: 10px 15px;
             background-color: #E11D20;
+            border-radius: 40px;
+            max-width: 150px;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            transition: all 0.5s;
+            cursor: pointer;
+
+            @media (max-width:880px) {
+                font-size: 20px;
+                max-width: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
             &:hover {
+                transform: scale(1.02);
                 background-color: #ff0004;
+            }
+
+            span {
+                color: white;
+                font-size: 25px;
+                font-weight: 700;
+
+                @media (max-width:880px) {
+                    font-size: 20px;
+
+
+                }
+
             }
         }
     }
@@ -378,18 +616,37 @@
         h1 {
             color: white;
             font-size: 40px;
+
+            @media (max-width:780px) {
+                font-size: 30px;
+            }
+
+            @media (max-width:580px) {
+                font-size: 20px;
+            }
         }
     }
 
     .gridPatrocionios {
-        display: grid;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
 
         .caixasPatrocinio {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: row;
+
+            display: grid;
+            gap: 25px;
+            grid-template-columns: repeat(4, 1fr);
+
+            @media (max-width:1180px) {
+                grid-template-columns: 1fr 1fr;
+
+            }
+
+            @media (max-width:690px) {
+                grid-template-columns: 1fr;
+            }
 
             .caixaPatrocinio {
                 height: 155px;
@@ -400,7 +657,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-             
+
                 transition: all 0.5s;
 
                 &:hover {

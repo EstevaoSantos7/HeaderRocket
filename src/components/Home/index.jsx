@@ -92,7 +92,7 @@ export default function Inicio() {
                         <h1 className={style.tituloCampeonato}>Principais Apostas</h1>
                         <div className={style.verMaisBotao}>
                             <a href='/esportes'>
-                                Ver Mais
+                              <p>  Ver Mais</p>
                                 <IoIosArrowDown color="#197EFF" size={40} />
 
                             </a>

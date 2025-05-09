@@ -17,9 +17,48 @@
             border-radius: 50px;
             gap: 20px;
 
+            @media (max-width: 660px) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
             h1 {
                 font-size: 29px;
                 color: white;
+
+                @media (max-width: 1500px) {
+                    font-size: 24px;
+                }
+
+                @media (max-width: 1420px) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: 1240px) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: 1240px) {
+                    font-size: 14px;
+                }
+
+                @media (max-width: 1130px) {
+                    font-size: 12px;
+                }
+
+                @media (max-width: 1080px) {
+                    font-size: 10px;
+                }
+
+                @media (max-width: 1020px) {
+                    font-size: 8px;
+                }
+
+                @media (max-width: 1000px) {
+                    display: none;
+                }
+
+
             }
 
             .elementoPage {
@@ -52,10 +91,17 @@
     }
 
 
+
+
     .caixa {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+
+        @media (max-width:1370px) {
+            grid-template-columns: 1fr;
+            margin: 0 auto;
+        }
 
         .caixaTituloEsporte {
             display: flex;
@@ -64,11 +110,26 @@
             gap: 20px;
             padding: 20px 0;
 
+            @media (max-width:880px) {
+                flex-direction: column;
+            }
+
+            @media (max-width:560px) {
+                width: 100%;
+            }
+
+
             .esporteTitulo {
                 color: white;
                 font-size: 45px;
                 font-weight: 700;
+
+
+                @media (max-width:880px) {
+                    font-size: 25px;
+                }
             }
+
         }
 
     }
@@ -78,6 +139,11 @@
         grid-template-columns: 1fr 1fr;
         gap: 25px;
         padding: 20px;
+
+        @media (max-width:1370px) {
+            grid-template-columns: 1fr;
+            margin: 0 auto;
+        }
     }
 
     .caixaFut {
@@ -89,8 +155,9 @@
         padding: 20px;
         border-radius: 32px;
         text-decoration: none;
+
         .time {
-        
+
             padding: 10px 20px 0px 20px;
             justify-content: center;
             display: flex;
@@ -99,6 +166,10 @@
             gap: 35px;
             width: 100%;
             text-align: center;
+
+            @media (max-width:880px) {
+                flex-direction: column;
+            }
 
             .timeAposta {
                 display: flex;
@@ -113,6 +184,12 @@
                 img {
                     width: 80px;
                     height: 80px;
+
+                    @media (max-width:880px) {
+                        width: 65px;
+                        height: 65px;
+
+                    }
 
                 }
 
@@ -135,6 +212,11 @@
             .genero {
                 font-size: 35px;
                 font-weight: 400;
+
+                @media (max-width:880px) {
+                    font-size: 26px;
+
+                }
             }
 
             .xis {
@@ -173,6 +255,14 @@
                 transition: all 0.5s;
                 cursor: pointer;
 
+                @media (max-width:880px) {
+                    font-size: 20px;
+                    max-width: 120px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
                 &:hover {
                     transform: scale(1.02);
                     background-color: #00ff6e;
@@ -195,6 +285,14 @@
                 align-items: center;
                 transition: all 0.5s;
                 cursor: pointer;
+
+                @media (max-width:880px) {
+                    font-size: 20px;
+                    max-width: 120px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
 
                 &:hover {
                     transform: scale(1.02);
@@ -219,6 +317,14 @@
                 transition: all 0.5s;
                 cursor: pointer;
 
+                @media (max-width:880px) {
+                    font-size: 20px;
+                    max-width: 120px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
                 &:hover {
                     transform: scale(1.02);
                     background-color: #ff0004;
@@ -227,7 +333,13 @@
                 span {
                     color: white;
                     font-size: 25px;
-                    font-weight: 700
+                    font-weight: 700;
+
+                    @media (max-width:880px) {
+                        font-size: 20px;
+
+
+                    }
                 }
             }
         }

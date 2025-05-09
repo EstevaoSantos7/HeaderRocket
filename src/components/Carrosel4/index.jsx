@@ -1,44 +1,47 @@
 import sty from './style.module.css';
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MdOutlineArrowCircleLeft, MdOutlineArrowCircleRight } from 'react-icons/md';
 
 export default function Carrosel4({ titulo, videos }) {
   const [indice, setIndice] = useState(0);
+  const [itensVisiveis, setItensVisiveis] = useState(5);
 
-  // Função para ir para o próximo item
+  useEffect(() => {
+    function atualizarTamanho() {
+      const largura = window.innerWidth;
+      if (largura < 500) setItensVisiveis(1);
+      else if (largura < 768) setItensVisiveis(2);
+      else if (largura < 1024) setItensVisiveis(3);
+      else if (largura < 1280) setItensVisiveis(4);
+      else setItensVisiveis(5);
+    }
+
+    atualizarTamanho();
+    window.addEventListener('resize', atualizarTamanho);
+    return () => window.removeEventListener('resize', atualizarTamanho);
+  }, []);
+
   function proximaImagem() {
-    let novoIndice = indice + 1;
-    if (novoIndice >= videos.length) {
-      novoIndice = 0;
-    }
-    setIndice(novoIndice);
+    setIndice((prev) => (prev + 1) % videos.length);
   }
 
-  // Função para ir para o item anterior
   function imagemAnterior() {
-    let novoIndice = indice - 1;
-    if (novoIndice < 0) {
-      novoIndice = videos.length - 1;
-    }
-    setIndice(novoIndice);
+    setIndice((prev) => (prev - 1 + videos.length) % videos.length);
   }
 
-  // Função que ajusta o índice cíclicamente
   function ajustarIndice(valor) {
-    if (valor >= videos.length) {
-      return valor - videos.length;
-    }
-    return valor;
+    return (valor + videos.length) % videos.length;
   }
 
-  // Acessando os itens baseados no índice atual
-  const item1 = videos[ajustarIndice(indice)];
-  const item2 = videos[ajustarIndice(indice + 1)];
-  const item3 = videos[ajustarIndice(indice + 2)];
-  const item4 = videos[ajustarIndice(indice + 3)];
-  const item5 = videos[ajustarIndice(indice + 4)];
-
+  const itensRenderizados = [];
+  for (let i = 0; i < itensVisiveis; i++) {
+    const item = videos[ajustarIndice(indice + i)];
+    itensRenderizados.push(
+      <a href="/Lobby" className={sty.item} key={i}>
+        <img src={item.src} alt={`item ${i + 1}`} />
+      </a>
+    );
+  }
 
   return (
     <div className={sty.secaoCarrossel}>
@@ -54,22 +57,11 @@ export default function Carrosel4({ titulo, videos }) {
         </div>
       </div>
       <div className={sty.carrossel}>
-        <div className={sty.carrosselItens}>
-          <a href='/Lobby' className={sty.item}>
-            <img src={item1.src} alt="item 1" />
-          </a>
-          <a href='/Lobby' className={sty.item}>
-            <img src={item2.src} alt="item 2" />
-          </a>
-          <a href='/Lobby' className={sty.item}>
-            <img src={item3.src} alt="item 3" />
-          </a>
-          <a href='/Lobby' className={sty.item}>
-            <img src={item4.src} alt="item 4" />
-          </a>
-          <a href='/Lobby' className={sty.item}>
-            <img src={item5.src} alt="item 5" />
-          </a>
+        <div
+          className={sty.carrosselItens}
+          style={{ gridTemplateColumns: `repeat(${itensVisiveis}, 1fr)` }}
+        >
+          {itensRenderizados}
         </div>
       </div>
     </div>
