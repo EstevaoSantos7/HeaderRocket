@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .gridFiltro {
         grid-template-columns: 1fr repeat(5, 1fr);
 
@@ -15,9 +16,43 @@
             border-radius: 50px;
             gap: 20px;
 
+            @media (max-width: 660px) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
             h1 {
                 font-size: 29px;
                 color: white;
+
+                /* Responsividade para o título */
+                @media (max-width: 1500px) {
+                    font-size: 24px;
+                }
+
+                @media (max-width: 1420px) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: 1240px) {
+                    font-size: 14px;
+                }
+
+                @media (max-width: 1130px) {
+                    font-size: 12px;
+                }
+
+                @media (max-width: 1080px) {
+                    font-size: 10px;
+                }
+
+                @media (max-width: 1020px) {
+                    font-size: 8px;
+                }
+
+                @media (max-width: 1000px) {
+                    display: none;
+                }
             }
 
             .elementoPage {
@@ -28,7 +63,6 @@
                 padding: 12px 8px;
                 background-color: #406493;
                 border-radius: 50px;
-
             }
 
             .elemento {
@@ -48,43 +82,82 @@
             }
         }
     }
-    .caixasCassino{
+
+    .caixasCassino {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         padding: 25px 10px;
-       
-        .tituloBox{
+
+        .tituloBox {
             display: flex;
             flex-direction: row;
             gap: 15px;
             align-items: center;
-            padding: 25px 0 ;
-            h1{
-                color: #ffff;
+            padding: 25px 0;
+
+            .tituloPage {
+                color: #fff;
                 font-size: 40px;
                 font-weight: 700;
+
+                @media (max-width: 740px) {
+                    font-size: 30px;
+                }
+
+                @media (max-width: 600px) {
+                    font-size: 25px;
+
+                }
+
+                @media (max-width: 480px) {
+                    font-size: 20px;
+
+                }
             }
+
         }
-        .gridContainer{
+
+        .gridContainer {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
-           gap: 25px;
-           
-           .caixaJogoCassino{
-            text-decoration: none;
-            transition: all 0.3s;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-           
+            gap: 25px;
+
+            @media (max-width: 1300px) {
+                grid-template-columns: repeat(4, 1fr);
+                
             }
-            &:hover{
-                transform: scale(1.04);
-                filter: brightness(1.29);
+
+            @media (max-width: 1000px) {
+                grid-template-columns: 1fr 1fr;
+            
+                margin: 0 auto;
+              
             }
-           }
+
+            @media (max-width: 600px) {
+                grid-template-columns: 1fr 1fr;
+               
+                margin: 0 auto;
+               
+            }
+
+            .caixaJogoCassino {
+                text-decoration: none;
+                transition: all 0.3s;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                }
+
+                &:hover {
+                    transform: scale(1.04);
+                    filter: brightness(1.29);
+                }
+            }
         }
     }
 

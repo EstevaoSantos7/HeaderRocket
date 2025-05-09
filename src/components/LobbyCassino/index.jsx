@@ -73,7 +73,7 @@ export default function LobbyCassino() {
                                 <div className={style.time}>
                                     <div className={style.timeAposta}>
                                         <img src={aposta.imagemTimeCasa} alt="" />
-                                        <p>{aposta.timeCasa}</p>
+                                        <p className={style.nomeTime}>{aposta.timeCasa}</p>
                                     </div>
                                     <div className={style.meio}>
                                         <p className={style.genero}>{aposta.generoJogo}</p>
@@ -82,7 +82,7 @@ export default function LobbyCassino() {
                                     </div>
                                     <div className={style.timeAposta}>
                                         <img src={aposta.imagemTimeFora} alt="" />
-                                        <p>{aposta.timeFora}</p>
+                                        <p className={style.nomeTime}>{aposta.timeFora}</p>
                                     </div>
                                 </div>
                                 <hr />
@@ -117,7 +117,7 @@ export default function LobbyCassino() {
                                 <div className={style.time}>
                                     <div className={style.timeAposta}>
                                         <img src={aposta.imagemTimeCasa} alt="" />
-                                        <p>{aposta.timeCasa}</p>
+                                        <p className={style.nomeTime}>{aposta.timeCasa}</p>
                                     </div>
                                     <div className={style.meio}>
                                         <p className={style.genero}>{aposta.generoJogo}</p>
@@ -126,7 +126,7 @@ export default function LobbyCassino() {
                                     </div>
                                     <div className={style.timeAposta}>
                                         <img src={aposta.imagemTimeFora} alt="" />
-                                        <p>{aposta.timeFora}</p>
+                                        <p className={style.nomeTime}>{aposta.timeFora}</p>
                                     </div>
                                 </div>
                                 <hr />
@@ -151,9 +151,9 @@ export default function LobbyCassino() {
                 </div>
 
             </div>
-            <Carrosel6 titulo="Cassino ao Vivo" videos={cassinoVivo} />
-            <Carrosel6 titulo="Jogos ao Vivo" videos={JogosVivo} />
-            <Carrosel6 titulo="Slots e Jogos" videos={slots} />
+            <Carrosel6 titulo="Cassino ao Vivo" endereco="DetalhesCassino" videos={cassinoVivo} />
+            <Carrosel6 titulo="Jogos ao Vivo"  endereco="DetalhesJogos" videos={JogosVivo} />
+            <Carrosel6 titulo="Slots e Jogos" endereco="DetalhesSlot" videos={slots} />
         </div>
     )
 }

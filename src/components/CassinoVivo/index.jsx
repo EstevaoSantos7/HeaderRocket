@@ -37,7 +37,7 @@ export default function CassinoVivo() {
             <div className={style.caixasCassino}>
             <div className={style.tituloBox}>
                     <GiPresent size={60} color='white' />
-                    <h1>Cassino ao Vivo</h1>
+                    <h1 className={style.tituloPage}>Cassino ao Vivo</h1>
                 </div>
                 <div className={style.gridContainer}>
                     {cassinoVivo.slice(0, 15).map(cassino => (

@@ -1,9 +1,25 @@
+
+.rodape{
+     @media (max-width:1170px) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
 .linksContainer{
     display: grid;
     width: 75%;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 15px;
+    @media (max-width:1170px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+    @media (max-width:860px) {
+        grid-template-columns: 1fr ;
+        gap: 25px;
+    }
     a{
         color: #8797AC;
         font-size: 18px;
@@ -23,6 +39,12 @@
         gap: 20px;
         border-right: solid #485B74 1px;  
         transition:  0.5s;
+         @media (max-width:1170px) {
+            padding-bottom: 10px;
+            padding-left: 20px;
+              border-right: 0   ; 
+        border-bottom: solid #485B74 1px; 
+    }
         
     }
     .cassino{
@@ -31,21 +53,38 @@
         gap: 20px;
         border-right: solid #485B74 1px;  
         padding-left: 50px;
+          @media (max-width:1170px) {
+            padding-bottom: 10px;
+            padding-left: 20px;
+              border-right: 0   ; 
+        border-bottom: solid #485B74 1px; 
+    }
     }
     .SobreNos{
         display: flex;
         flex-direction: column;
-      
         gap: 20px;
         border-right: solid #485B74 1px;  
         padding-left: 50px;
         padding-right: 10px;
+          @media (max-width:1170px) {
+            padding-bottom: 10px;
+            padding-left: 20px;
+              border-right: 0   ; 
+        border-bottom: solid #485B74 1px; 
+    }
     }
     .ajuda{
         display: flex;
         flex-direction: column;
         gap: 20px;
         padding-left: 50px;
+          @media (max-width:1170px) {
+            padding-bottom: 10px;
+            padding-left: 20px;
+              border-right: 0   ; 
+        border-bottom: solid #485B74 1px; 
+    }
     }
    
     h1{
@@ -66,6 +105,22 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+         max-width: 500px;
+         width: 100%;
+         
+               @media (max-width:780px) {
+           max-width: 400px;
+    }
+               @media (max-width:690px) {
+           max-width: 350px;
+    }
+               @media (max-width:615px) {
+           max-width: 300px;
+    }
+               @media (max-width:580px) {
+           max-width: 200px;
+    }
+        
         hr{
             border: #5D6E84 solid 1px;
         }
@@ -82,7 +137,12 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 90px;
+       justify-content: space-between;
+        @media (max-width:615px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
         #banco{
             width: 80px;
             height: 80px;

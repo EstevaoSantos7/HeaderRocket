@@ -31,7 +31,7 @@ export default function RankingSlots() {
             >
               <div className={style.imgSlot}>
                 <img src={slot.src} alt={`Imagem do ${slot.titulo}`} />
-              </div>
+              </div>   
 
               <div className={style.rateSlot}>
                 <FaRegStar />

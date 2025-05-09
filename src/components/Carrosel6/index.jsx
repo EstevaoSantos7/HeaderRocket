@@ -1,10 +1,41 @@
 import sty from './style.module.css';
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MdOutlineArrowCircleLeft, MdOutlineArrowCircleRight } from 'react-icons/md';
 
-export default function Carrosel4({ titulo, videos }) {
+export default function Carrosel6({ titulo, videos, endereco }) {
   const [indice, setIndice] = useState(0);
+  const [itensVisiveis, setItensVisiveis] = useState(6); // Controla quantos itens são visíveis no carrossel
+
+  // Função para ajustar o número de itens visíveis com base na largura da tela
+  function ajustarItensVisiveis() {
+    const larguraTela = window.innerWidth;
+    if (larguraTela >= 1200) {
+      setItensVisiveis(6);
+    } else if (larguraTela >= 1000) {
+      setItensVisiveis(5);
+    } else if (larguraTela >= 800) {
+      setItensVisiveis(4);
+    } else if (larguraTela >= 600) {
+      setItensVisiveis(3);
+    } else if (larguraTela >= 400) {
+      setItensVisiveis(2);
+    } else {
+      setItensVisiveis(1);
+    }
+  }
+
+  useEffect(() => {
+    // Ajusta os itens visíveis quando a largura da tela muda
+    ajustarItensVisiveis();
+
+    // Adiciona listener para atualizar o número de itens visíveis quando a janela for redimensionada
+    window.addEventListener('resize', ajustarItensVisiveis);
+
+    // Limpeza do listener ao desmontar o componente
+    return () => {
+      window.removeEventListener('resize', ajustarItensVisiveis);
+    };
+  }, []);
 
   // Função para ir para o próximo item
   function proximaImagem() {
@@ -33,13 +64,10 @@ export default function Carrosel4({ titulo, videos }) {
   }
 
   // Acessando os itens baseados no índice atual
-  const item1 = videos[ajustarIndice(indice)];
-  const item2 = videos[ajustarIndice(indice + 1)];
-  const item3 = videos[ajustarIndice(indice + 2)];
-  const item4 = videos[ajustarIndice(indice + 3)];
-  const item5 = videos[ajustarIndice(indice + 4)];
-  const item6 = videos[ajustarIndice(indice + 5)];
-
+  const itens = [];
+  for (let i = 0; i < itensVisiveis; i++) {
+    itens.push(videos[ajustarIndice(indice + i)]);
+  }
 
   return (
     <div className={sty.secaoCarrossel}>
@@ -56,24 +84,11 @@ export default function Carrosel4({ titulo, videos }) {
       </div>
       <div className={sty.carrossel}>
         <div className={sty.carrosselItens}>
-          <a href={`/detalhesSlot/${item1.id}`} className={sty.item}>
-            <img src={item1.src} alt="item 1" />
-          </a>
-          <a href={`/detalhesSlot/${item2.id}`} className={sty.item}>
-            <img src={item2.src} alt="item 2" />
-          </a>
-          <a href={`/detalhesSlot/${item3.id}`} className={sty.item}>
-            <img src={item3.src} alt="item 3" />
-          </a>
-          <a href={`/detalhesSlot/${item4.id}`} className={sty.item}>
-            <img src={item4.src} alt="item 4" />
-          </a>
-          <a href={`/detalhesSlot/${item5.id}`} className={sty.item}>
-            <img src={item5.src} alt="item 5" />
-          </a>
-          <a href={`/detalhesSlot/${item6.id}`} className={sty.item}>
-            <img src={item6.src} alt="item 6" />
-          </a>
+          {itens.map((item, index) => (
+            <a key={item.id} href={`/${endereco}/${item.id}`} className={sty.item}>
+              <img src={item.src} alt={`item ${index + 1}`} />
+            </a>
+          ))}
         </div>
       </div>
     </div>

@@ -38,7 +38,7 @@ export default function JogoVivo(jogo) {
 
                 <div className={style.tituloBox}>
                     <GiPresent size={60} color='white' />
-                    <h1>Jogos ao Vivo</h1>
+                    <h1 className={style.tituloPage}>Jogos ao Vivo</h1>
                 </div>
                 <div className={style.gridContainer}>
                     {jogosVivo.slice(0, 15).map(jogos => (

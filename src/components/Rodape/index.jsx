@@ -13,21 +13,22 @@ import Termos from '../../pages/Termos'
                 <div className={style.linksContainer}>
                     <div className={style.esportes}>
                         <h1>Apostas</h1>
-                        <a href="/jogosAoVivo">Ao Vivo</a>
+                        <a href="/jogosAoVivo">Jogo Ao Vivo</a>
+                        <a href="/cassinoAoVivo">Cassino Ao Vivo</a>
                         <a href="/esportes">Esportes</a>
                     </div>
                     <div className={style.cassino}>
                         <h1>Cassino</h1>
-                        <a href="">Jogos</a>
+                        <a href="/Lobby">Lobby</a>
                     </div>
                     <div className={style.SobreNos}>
                         <h1>Sobre Nós</h1>
-                        <a href="/sobre">Politicas de privacidade</a>
+                        <a href="/sobre">Nossa Equipe</a>
                         <a href="/Termos">Termos de condição</a>
                     </div>
                     <div className={style.ajuda}>
                         <h1>Ajuda</h1>
-                        <a href="">Central de ajuda</a>
+                        <a href="/central">Central de ajuda</a>
                     </div>
 
                 </div>

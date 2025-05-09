@@ -37,7 +37,7 @@ export default function CassinoVivo(slot) {
             <div className={style.caixasCassino}>
             <div className={style.tituloBox}>
                     <FaFireAlt size={60} color='white' />
-                    <h1>Slots</h1>
+                    <h1 className={style.tituloPage}>Slots</h1>
                 </div>
                 <div className={style.gridContainer}>
                     {Slots.slice(0, 15).map(slot => (
