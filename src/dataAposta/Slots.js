@@ -22,41 +22,49 @@ const Slots = [
         id: 1,
         titulo: "Sweet Bonanza 1000",
         src: bonanza,
+        nota:"4,9"
     },
     {
         id: 2,
         titulo: "Gates of Olympus 1000",
         src: gates,
+        nota:"4,8"
     },
     {
         id: 3,
         titulo: "Aztec Smash",
         src: aztec,
+        nota:"4,6"
     },
     {
         id: 4,
         titulo: "Baccarat",
         src: baccarat,
+        nota:"4,5"
     },
     {
         id: 5,
         titulo: "Big Bass Crash",
         src: bigbass,
+        nota:"4,4"
     },
     {
         id: 6,
         titulo: "Boxes",
         src: boxes,
+        nota:"4,3"
     },
     {
         id: 7,
         titulo: "Irish Crown",
         src: crown,
+        nota:"4,3"
     },
     {
         id: 8,
         titulo: "High Flyer",
         src: flyer,
+        nota:"4,1"
     },
     {
         id: 9,
