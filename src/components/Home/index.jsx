@@ -62,7 +62,7 @@ export default function Inicio() {
                 <div className={style.caixasCampeonato}>
                     <div className={style.caixaCampeonato}>
                         <div className={style.conteudoCampeonato}>
-                            <h1  className={style.tituloCampeonato}>Libertadores</h1>
+                            <h1 className={style.tituloCampeonato}>Libertadores</h1>
                             <p className={style.descCampeonato}>"Na Libertadores, a bola queimar e a aposta ferve
                                 aqui, quem arrisca vibra como campeão."</p>
                             <a href='/Esportes' className={style.botaoApostar}>
@@ -92,7 +92,7 @@ export default function Inicio() {
                         <h1 className={style.tituloCampeonato}>Principais Apostas</h1>
                         <div className={style.verMaisBotao}>
                             <a href='/esportes'>
-                              <p>  Ver Mais</p>
+                                <p>  Ver Mais</p>
                                 <IoIosArrowDown color="#197EFF" size={40} />
 
                             </a>
@@ -102,8 +102,8 @@ export default function Inicio() {
                     <div className={style.caixa}>
                         {apostas.slice(0, 6).map(aposta => (
                             <div className={style.timesAposta} key={aposta.id}>
-                               
-                                <a href='/DetalhesSport' className={style.caixaFut}>
+
+                                <a href={`/detalhesSport/${aposta.id}`} className={style.caixaFut}>
                                     <div className={style.time}>
                                         <div className={style.timeAposta}>
                                             <img src={aposta.imagemTimeCasa} alt="" />
