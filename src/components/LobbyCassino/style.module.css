@@ -93,7 +93,7 @@
 }
 
 .containerApostas {
-    @media (max-width:1350px) {
+    @media (max-width:1150px) {
         display: flex;
         flex-direction: column;
 
